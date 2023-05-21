@@ -1,0 +1,261 @@
+.bottom{
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap; 
+    background :linear-gradient(rgb(41, 41, 40), rgb(2, 2, 2));
+    justify-content: center;
+    align-items: center;
+    //left logo and hours open
+    .left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding: 20px;
+        .item1{
+            width: max-content;
+            h2{
+                font-weight: 300;
+                color: rgba(24, 109, 219, 0.94);
+                margin-bottom: 15px;
+                margin-left: 8px;
+                font-size: 22px;
+
+            }
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .day{
+                    display: flex;
+                    align-items: center;
+                    font-size: 18px;
+                    color: gray;
+                    .dayLogo{
+                        margin-right: 5px;
+                        color: rgba(24, 109, 219, 0.94);
+                    }
+                }
+                span{
+                    margin-left: 8px;
+                    color: rgb(225, 225, 225);
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .center{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:10px 120px;
+
+        .logo {
+            color: rgb(255, 255, 255);
+            font-weight: 400;
+            font-size: 23px;
+            margin-bottom: 8px;
+             span {
+              color: rgba(24, 109, 219, 0.94);
+            }
+        }
+        .dumLogo{
+            font-size: 160px;
+            color: rgba(24, 109, 219, 0.94);
+        }
+       
+    }
+    .right{
+        flex: 1;
+        display: flex;
+        padding: 20px;
+
+        
+        // width: 30%;
+        .item{
+            display: flex;
+            // align-items: center;
+            flex-direction: column;
+            
+
+            h2{
+                font-size: 22px;
+                font-weight: 300;
+                color: rgba(24, 109, 219, 0.94);
+                margin-bottom: 15px;
+            }
+            .phone{
+                color: white;
+                font-size: 17px;
+                font-weight: 300;
+                margin:5px 0px;
+                span{
+                    margin-left: 5px;
+                   
+                    font-size: 16px;
+                    color: gray;
+                    font-weight: 200;
+                }
+            }
+            .email{
+                color: white;
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom:6px;
+                span{
+                    margin-left: 5px;
+                    font-size: 16px;
+                    color:  rgba(150, 150, 150, 0.94);
+                    font-weight: 200;
+                }
+            }
+
+            .itemslogo{
+                display: flex;
+                align-items: center;
+                .items{
+                    margin: 5px;
+                    font-size: 18px;
+                    color: rgba(250, 250, 250, 0.773);
+                }
+
+            }
+        }
+    }
+
+    @media screen and (max-width:920px) {
+        width: 100vw;
+        height: max-content;
+        display: flex;
+        flex-wrap: wrap; 
+        background :linear-gradient(rgb(41, 41, 40), rgb(2, 2, 2));
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        //left logo and hours open
+        .left{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            .item1{
+                width: max-content;
+                h2{
+                    font-weight: 300;
+                    color: rgba(24, 109, 219, 0.94);
+                    margin-bottom: 15px;
+                    margin-left: 8px;
+                    font-size: 20px;
+    
+                }
+                div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .day{
+                        display: flex;
+                        align-items: center;
+                        font-size: 18px;
+                        color: gray;
+                        .dayLogo{
+                            margin-right: 5px;
+                            color: rgba(24, 109, 219, 0.94);
+                        }
+                    }
+                    span{
+                        margin-left: 8px;
+                        color: rgb(225, 225, 225);
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    
+        .center{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:10px 120px;
+            
+            .logo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: rgb(255, 255, 255);
+                font-weight: 400;
+                font-size: 18px;
+                margin-bottom: 8px;
+                 span {
+                  color: rgba(24, 109, 219, 0.94);
+                }
+            }
+            .dumLogo{
+                font-size: 120px;
+                color: rgba(24, 109, 219, 0.94);
+            }
+           
+        }
+        .right{
+            flex: 1;
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+
+            .item{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                
+                h2{
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: rgba(24, 109, 219, 0.94);
+                    margin-bottom: 15px;
+                }
+                .phone{
+                    color: white;
+                    font-size: 17px;
+                    font-weight: 300;
+                    margin:5px 0px;
+                    span{
+                        margin-left: 5px;
+
+                        font-size: 16px;
+                        color: gray;
+                        font-weight: 200;
+                    }
+                }
+                .email{
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin-bottom:6px;
+                    span{
+                        margin-left: 5px;
+                        font-size: 16px;
+                        color:  rgba(150, 150, 150, 0.94);
+                        font-weight: 200;
+                    }
+                }
+    
+                .itemslogo{
+                    display: flex;
+                    align-items: center;
+                    .items{
+                        margin: 5px;
+                        font-size: 18px;
+                        color: rgba(250, 250, 250, 0.773);
+                    }
+    
+                }
+            }
+        }
+    }
+}

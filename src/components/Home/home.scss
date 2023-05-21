@@ -1,0 +1,114 @@
+.videoHome {
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+.Home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+  .Right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    width: 100%;
+
+    .Title {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      h1 {
+        color: rgb(254, 254, 254);
+        text-shadow: 1px 1px 9px rgba(255, 255, 255, 0.63);
+        font-size: 55px;
+        font-weight: normal;
+      }
+
+
+      .Buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 50px 0px;
+
+        .btn-1 {
+          padding: 10px 66px;
+          margin: 5px;
+          background-color: transparent;
+          border: 1px solid rgb(249, 249, 249);
+          font-size: 20px;
+          font-weight: 100;
+          color: white;
+        }
+
+        .btn-1:hover {
+           background-color: rgba(163, 163, 163, 0.668);
+        }
+
+
+        .btn-2 {
+          font-size: 20px;
+          font-weight: 100;
+          padding: 10px 55px;
+          margin: 5px;
+          background-color: rgb(219, 219, 219);
+          border: 1px solid rgb(219, 219, 219);
+          color: rgb(0, 0, 0);
+          box-shadow: -1px -1px 54px 4px rgba(255, 255, 255, 0.76);
+          -webkit-box-shadow: -1px -1px 54px 4px rgba(255, 255, 255, 0.76);
+          -moz-box-shadow: -1px -1px 54px 4px rgba(255, 255, 255, 0.76);
+        }
+        .btn-2:hover {
+          background-color: rgba(163, 163, 163, 0.668);
+          color: white;
+       }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width:550px) {
+  .Home {
+
+    .Right {
+
+
+      .Title {
+        h1 {
+          font-size: 49px;
+
+        }
+
+
+        .Buttons {
+
+
+          .btn-1 {
+            padding: 10px 56px;
+
+          }
+
+          .btn-2 {
+            padding: 10px 45px;
+
+          }
+        }
+      }
+    }
+  }
+}

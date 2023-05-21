@@ -1,0 +1,155 @@
+.Navbar-background{
+  background: linear-gradient(rgba(0, 0, 0, 0.619),rgba(50, 50, 50, 0));
+}
+
+
+.Navbar{
+  position: fixed;
+  width: 100vw;
+  height: 9vh;
+  z-index: 999;
+  .Wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 18px 10px;
+    // ********************************** right **********************************
+    .Right{
+      flex:1;
+      display: flex;
+      justify-content: start;
+      margin-left: 30px;
+      .RightLogo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        span:first-child{
+            color: rgb(5, 110, 191);
+            font-size: 23px;
+            font-weight: 400;
+        }
+        .Logo{
+          font-size: 24px;
+          color: white;
+        }
+        span:last-child{
+          color: white;
+          font-size: 20px;
+          font-weight: 400;
+        }
+      }
+    }
+    // ********************************** center **********************************
+    .Center{
+      flex: 1;
+      display: flex;
+      justify-content: end;
+      margin-right: 40px;
+      .Items{
+        display: flex;
+        align-items: center;
+
+        .Item{
+          cursor: pointer;
+          color: white;
+          font-size: 18px;
+          font-weight: 300;
+          margin: 10px;
+          list-style: none;
+        }
+      }
+    }
+    // ********************************** left **********************************
+    .Left{
+      flex: 1;
+      display: none;
+      justify-content: end;
+      margin-top: 5px;
+      margin-right: 8%;
+      .LogoDumbell{
+         font-size: 30px;
+        color: rgb(5, 110, 191);
+        cursor: pointer;
+      }
+      .LogoCloseMenu{
+        font-size: 42px;
+        color: rgb(31, 84, 175);
+        z-index: 999;
+        cursor: pointer;
+       }
+     }
+
+  }
+      // ********************************** Menu items **********************************
+  .MenuItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(34, 34, 34);
+    position: absolute;
+    top: 0;
+ 
+    .Items{
+      text-align: center;
+       color: rgb(255, 255, 255);
+      list-style: none;
+      .Item{
+        padding:26px;
+        font-size: 40px;
+        font-weight: 600;
+        border-bottom: 1px solid rgba(5, 110, 191, 0.187);
+        cursor: pointer;
+
+      }
+      .Item:hover{
+        background: linear-gradient(rgba(34, 86, 150, 0.364) , rgba(21, 84, 144, 0.104));
+        border-bottom: 1px solid rgba(5, 110, 191, 0.606);
+      }
+    }
+  }
+}
+
+@media screen and (max-width:625px) {
+  .Navbar{
+     
+    .Wrapper{
+     
+      // ********************************** right **********************************
+      .Right{
+ 
+        .RightLogo{
+ 
+          span:first-child{
+ 
+          }
+          .Logo{
+ 
+          }
+          span:last-child{
+  
+          }
+        }
+      }
+      // ********************************** center **********************************
+      .Center{
+        display: none;
+        .Items{
+ 
+  
+          .Item{
+ 
+          }
+        }
+      }
+      // ********************************** left **********************************
+      .Left{
+          display: flex;
+       }
+  
+    }
+  }
+}

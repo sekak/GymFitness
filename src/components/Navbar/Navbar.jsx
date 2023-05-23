@@ -10,60 +10,59 @@ import 'aos/dist/aos.css'
 AOS.init();
 
 const Navbar = () => {
- 
+
     const [open, setOpen] = useState(false)
     const [show, setShow] = useState(true)
     const handlescroll = (e) => {
-        // if(e.target)
-        // {/
-            window.scrollTo({
-                top: 1224 * e.target.id,
-                behavior: 'smooth',
-                duration: 600 
-            })
-        // }
-        // var fnm = document.getElementById('1')
-        // console.log(e.target.id)
+   
+        console.log(e.target.id)
+        window.scrollTo({
+            top: 1224 * e.target.id,
+            behavior: 'smooth',
+            duration: 600
+        })
+        
     }
-    console.log(open)
+ 
     window.addEventListener('scroll', () => {
-        setOpen(false)
+        // setOpen(false)
         if (window.pageYOffset >= 131)
-        setShow(false)
+            setShow(false)
         else if (window.pageYOffset <= 131)
-        setShow(true)
-        console.log(window.pageYOffset)
+            setShow(true)
+        // console.log(window.pageYOffset)
     })
-    
-      return (
+
+    return (
         <>
-            <div  className={show ? "Navbar" :  "Navbar  Navbar-background"}>
+            <div className={show ? "Navbar" : "Navbar  Navbar-background"}>
                 <div className="Wrapper">
                     <div className="Right">
                         <div className="RightLogo">
                             <span data-aos="zoom-in" data-aos-duration="1000" >FITNESS</span>
-                            <GiBigWave data-aos="zoom-in" data-aos-duration="1000"  className='Logo'/>
+                            <GiBigWave data-aos="zoom-in" data-aos-duration="1000" className='Logo' />
                             <span data-aos="zoom-in" data-aos-duration="1000" >MARINA</span>
                         </div>
                     </div>
                     <div className="Center">
-                        <ul className='Items'>
-                            <li data-aos="zoom-in" data-aos-duration="1000" className="Item">ACCUEIL</li>
-                            <li data-aos="zoom-in" data-aos-duration="1200" className="Item">COACHS</li>
-                            <li data-aos="zoom-in" data-aos-duration="1400" className="Item">CONTACT</li>
+                        <ul className='Items' onClick={(e)=>handlescroll(e)}>
+                            <li id="1" data-aos="zoom-in" data-aos-duration="1000" className="Item">ACCUEIL</li>
+                            <li id="2" data-aos="zoom-in" data-aos-duration="1200" className="Item">COACHS</li>
+                            <li id="3" data-aos="zoom-in" data-aos-duration="1400" className="Item">CONTACT</li>
                         </ul>
                     </div>
-                    <div className="Left" onClick={()=>setOpen(!open)}>{open ? <IoMdClose  className='LogoCloseMenu' />:  <FaDumbbell className='LogoDumbell'   /> }</div>
+                    <div className="Left" onClick={() => setOpen(!open)}>{open ? <IoMdClose className='LogoCloseMenu' /> : <FaDumbbell className='LogoDumbell' />}
+                    </div>
                 </div>
                 {
                     open &&
-                <div className='MenuItem'>
-                          <ul className='Items'>
-                            <li data-aos="zoom-in" data-aos-duration="1000" className="Item">ACCUEIL</li>
-                            <li data-aos="zoom-in" data-aos-duration="1200" className="Item">COACHS</li>
-                            <li data-aos="zoom-in" data-aos-duration="1400" className="Item">CONTACT</li>
+                    <div className='MenuItem'>
+                        <ul className='Items'>
+                            <li onClick={()=>setOpen(false)} data-aos="zoom-in" data-aos-duration="1000" className="Item">ACCUEIL</li>
+                            <li onClick={()=>setOpen(false)} data-aos="zoom-in" data-aos-duration="1200" className="Item">COACHS</li>
+                            <li onClick={()=>setOpen(false)} data-aos="zoom-in" data-aos-duration="1400" className="Item">CONTACT</li>
                         </ul>
-                </div>
+                    </div>
                 }
             </div>
         </>

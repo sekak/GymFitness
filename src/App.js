@@ -1,4 +1,5 @@
-import './App.css';
+import './App.scss';
+import Article from './components/Articl/Article';
 import Bottom from './components/Bottom/Bottom';
 import Coach from './components/Coach/Coach';
 import Features from './components/Features/Features';
@@ -10,9 +11,10 @@ function App() {
  
   return (
     <div className="App">
-      <Navbar />
+       <Navbar />
       <Home />
-      <Features />
+      <Article/>
+      {/* <Features /> */}
       <Coach />
       <Bottom />
     </div>

@@ -1,0 +1,101 @@
+ .Article {
+     width: 100vw;
+     height:max-content;
+     background-color: black;
+     color: white;
+     overflow: hidden;
+    clip-path: polygon(0% 6%,100% 0%,100% 100%,0% 93%);
+        // padding: 20px;
+
+     .Wrapper {
+         display: flex;
+         flex-wrap: wrap-reverse;
+         align-items: center;
+         justify-content: center;
+         width: 100%;
+         height: 100%;
+ 
+         .Left {
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             flex: 1.5;
+             width: 100%;
+             height: 100%;
+           
+
+             .RightImg {
+                width: 400px;
+                  object-fit: cover;
+             }
+
+         }
+         
+         .Right {
+             flex: 1.5;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             position: relative;
+            .rect{
+                position: absolute;
+                background-color: rgb(14, 90, 157);
+                width: 40px;
+                height: 230%;
+                right: 10px;
+                transform: rotate(45deg);
+                
+            }
+             .Regulate {
+                 display: flex;
+                 flex-direction: column;
+
+                 .TitleLeft {
+ 
+                      font-size: 56px;
+                     font-weight: 900;
+                     margin-bottom: 50px;
+                    }
+                    
+                 .ParagLeft {
+                    z-index: 99;
+                    width: 50%;
+                     font-weight: 100;
+                     font-size: 15px;
+                     margin-bottom: 40px;
+                     letter-spacing: 1px;
+                     text-decoration: double;
+                 }
+
+                 .DomainLeft {
+                        display: flex;
+                        align-items: center;
+                     h1 {
+                        background: url(https://images.freeimages.com/images/large-previews/dd5/blue-smoke-background-1630979.jpg);
+                        -webkit-text-fill-color: transparent;
+                        -webkit-background-clip: text;
+                        background-size: 150%;
+                        animation: iwmg 10s linear infinite;
+                        font-size: 120px;
+                         margin-right: 10px;
+                         opacity: 0.8;
+                     }
+                     @keyframes iwmg {
+                        100%{
+                            background-position: 100%;
+                        }
+                     }
+                     .DomainLeftConcepts {
+                         display: flex;
+                         flex-direction: column;
+                        
+                         span {
+                             font-size: 10px;
+                             font-weight: normal;
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }

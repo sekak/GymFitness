@@ -84,7 +84,7 @@
   }
       // ********************************** Menu items **********************************
   .MenuItem{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 100vw;
@@ -149,7 +149,35 @@
       .Left{
           display: flex;
        }
+      
+    }
+    .MenuItem{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(34, 34, 34);
+      position: absolute;
+      top: 0;
+   
+      .Items{
+        text-align: center;
+         color: rgb(255, 255, 255);
+        list-style: none;
+        .Item{
+          padding:26px;
+          font-size: 40px;
+          font-weight: 600;
+          border-bottom: 1px solid rgba(5, 110, 191, 0.187);
+          cursor: pointer;
   
+        }
+        .Item:hover{
+          background: linear-gradient(rgba(34, 86, 150, 0.364) , rgba(21, 84, 144, 0.104));
+          border-bottom: 1px solid rgba(5, 110, 191, 0.606);
+        }
+      }
     }
   }
 }

@@ -2,9 +2,13 @@ import './home.scss'
 import vdy from './video.mp4'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
-AOS.init();
+import { useEffect } from 'react';
+ 
 const Home = () => {
 
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+     }, [])
 
     return (
         <>
@@ -12,9 +16,9 @@ const Home = () => {
             <div className='Home'>
                 <div className="Right">
                     <div className='Title'>
-                        <h1 data-aos="fade-up" data-aos-duration="1000"
-                            data-aos-mirror="true"
-                            data-aos-once="true">ACCUEIL</h1>
+                        <h1 data-aos="fade-up" 
+                        data-aos-duration="1000"
+                         >ACCUEIL</h1>
                         <div className="Buttons">
                             <input
                                 data-aos="fade-right"
@@ -24,7 +28,7 @@ const Home = () => {
                             <input
                                 data-aos="fade-left"
                                 data-aos-anchor="#example-anchor"
-                                data-aos-duration="1500"
+                                data-aos-duration="1000"
                                 className="btn-2" type="button" value="GET IN TOUCH" />
                         </div>
                     </div>

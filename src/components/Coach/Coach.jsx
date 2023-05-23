@@ -6,6 +6,7 @@ import { RxInstagramLogo } from "react-icons/rx";
 const Coach = () => {
   return (
     <div className='coach'>
+        <div className='rect'></div>
         <h3>COACHES<div className='line'></div></h3>
         <div className="wrapper">
             <div className="items">

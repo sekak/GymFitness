@@ -23,8 +23,7 @@ function Article() {
 
                 <div className="Right">
                     <div className="rect"></div>
-                    <div className="rect"></div>
-                    <div className="Regulate">
+                     <div className="Regulate">
                         <h1 data-aos="fade-left"
                             data-aos-anchor-placement="top-bottom"
                             data-aos-duration="1500" className='TitleLeft'>WELCOME TO OUR GYM</h1>

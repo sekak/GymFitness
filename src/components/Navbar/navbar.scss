@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 18px 10px;
+    padding: 10px 0px;
     // ********************************** right **********************************
     .Right{
       flex:1;
@@ -25,22 +25,13 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        span:first-child{
-            color: rgb(5, 110, 191);
-            font-size: 23px;
-            font-weight: 400;
-        }
+        
         .Logo{
-          font-size: 24px;
-          color: white;
-        }
-        span:last-child{
-          color: white;
-          font-size: 20px;
-          font-weight: 400;
+          width: 90px;
         }
       }
     }
+    
     // ********************************** center **********************************
     .Center{
       flex: 1;
@@ -70,12 +61,12 @@
       margin-right: 8%;
       .LogoDumbell{
          font-size: 30px;
-        color: rgb(5, 110, 191);
+        color: rgb(92 ,168 ,192);
         cursor: pointer;
       }
       .LogoCloseMenu{
         font-size: 42px;
-        color: rgb(31, 84, 175);
+        color: rgb(92 ,168 ,192);
         z-index: 999;
         cursor: pointer;
        }

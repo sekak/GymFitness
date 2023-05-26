@@ -4,7 +4,8 @@ import { CgMenuGridR } from "react-icons/cg";
 import { BsTwitter } from "react-icons/bs";
 import { FaDumbbell } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import loogoo from './loogoo.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 AOS.init();
@@ -33,15 +34,17 @@ const Navbar = () => {
         // console.log(window.pageYOffset)
     })
 
+    useEffect(()=>{
+        AOS.init({duration:2000})
+    })
+
     return (
         <>
             <div className={show ? "Navbar" : "Navbar  Navbar-background"}>
                 <div className="Wrapper">
                     <div className="Right">
                         <div className="RightLogo">
-                            <span data-aos="zoom-in" data-aos-duration="1000" >FITNESS</span>
-                            <GiBigWave data-aos="zoom-in" data-aos-duration="1000" className='Logo' />
-                            <span data-aos="zoom-in" data-aos-duration="1000" >MARINA</span>
+                            <img data-aos="zoom-in" data-aos-duration="1000" src={loogoo} alt="logo" className='Logo' />
                         </div>
                     </div>
                     <div className="Center">

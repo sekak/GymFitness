@@ -3,27 +3,33 @@ import imgMuscl from './img.jpeg'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import { useEffect } from 'react';
- 
+
 
 
 function Article() {
 
     useEffect(() => {
         AOS.init({ duration: 2000 });
-     }, [])
+    }, [])
 
     return (
         <div className='Article'>
             <div className="Wrapper">
+                {/*********** Left ********* */}
                 <div className="Left">
-                    <img data-aos="fade-right"
-                        data-aos-anchor-placement="top-bottom"
-                        data-aos-duration="1500" className='RightImg' src={imgMuscl} alt="" />
+                    <div className="wrappLeft">
+                        <img data-aos="fade-right"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="1500" className='RightImg'
+                            src={imgMuscl} alt="" />
+                    </div>
                 </div>
-
+                {/*********** Left ********* */}
+                {/*********** Right ********* */}
                 <div className="Right">
-                    <div className="rect"></div>
-                     <div className="Regulate">
+                     <div className="rect">
+                    </div>
+                    <div className="Regulate">
                         <h1 data-aos="fade-left"
                             data-aos-anchor-placement="top-bottom"
                             data-aos-duration="1500" className='TitleLeft'>WELCOME TO OUR GYM</h1>
@@ -35,6 +41,7 @@ function Article() {
                                 data-aos-anchor-placement="top-bottom"
                                 data-aos-duration="1500">6</h1>
                             <div data-aos="flip-left"
+                                // data-aos
                                 data-aos-anchor-placement="top-bottom"
                                 data-aos-duration="3500" className='DomainLeftConcepts'>
                                 <span>ESPACES </span>
@@ -44,7 +51,10 @@ function Article() {
                     </div>
                 </div>
             </div>
+            {/*********** Right ********* */}
+
         </div>
+     
     )
 }
 

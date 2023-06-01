@@ -1,101 +1,156 @@
- .Article {
-     width: 100vw;
-     height:max-content;
-     background-color: black;
-     color: white;
-     overflow: hidden;
-    clip-path: polygon(0% 6%,100% 0%,100% 100%,0% 93%);
-        // padding: 20px;
-
+.Article {
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+    background-color: black;
+    clip-path: polygon(0% 6%, 100% 0%, 100% 100%, 0% 93%);
      .Wrapper {
-         display: flex;
-         flex-wrap: wrap;
-         align-items: center;
-         justify-content: center;
-         width: 100%;
-         height: 100%;
- 
-         .Left {
-             display: flex;
-             align-items: center;
-             justify-content: center;
-             flex: 1.5;
-             width: 100%;
-             height: 100%;
-           
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
 
-             .RightImg {
+        .Left {
+            flex: 1;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .RightImg {
                 width: 400px;
-                  object-fit: cover;
-             }
-
-         }
-         
-         .Right {
-             flex: 1.5;
-             display: flex;
-             justify-content: center;
-             align-items: center;
-             position: relative;
-            .rect{
-                position: absolute;
-                background-color: rgb(14, 90, 157);
-                width: 40px;
-                height: 230%;
-                right: 10px;
-                transform: rotate(45deg);
-                
+                object-fit: cover;
+                animation: img 1s infinite ease-in-out;
             }
-             .Regulate {
-                 display: flex;
-                 flex-direction: column;
-
-                 .TitleLeft {
- 
-                      font-size: 56px;
-                     font-weight: 900;
-                     margin-bottom: 50px;
-                    }
-                    
-                 .ParagLeft {
-                    z-index: 99;
-                    width: 50%;
-                     font-weight: 100;
-                     font-size: 15px;
-                     margin-bottom: 40px;
-                     letter-spacing: 1px;
-                     text-decoration: double;
-                 }
-
-                 .DomainLeft {
-                        display: flex;
-                        align-items: center;
-                     h1 {
-                        background: url(https://images.freeimages.com/images/large-previews/dd5/blue-smoke-background-1630979.jpg);
-                        -webkit-text-fill-color: transparent;
-                        -webkit-background-clip: text;
-                        background-size: 150%;
-                        animation: iwmg 10s linear infinite;
-                        font-size: 120px;
-                         margin-right: 10px;
+            @keyframes img {
+                     0% {
+                         opacity: 1;
+                     }
+                
+                     20% {
+                         opacity: 0.9;
+                     }
+                
+                     40% {
                          opacity: 0.8;
                      }
-                     @keyframes iwmg {
-                        100%{
-                            background-position: 100%;
-                        }
+                     50% {
+                        opacity: 0.6;
+                    }
+                    55% {
+                        opacity: 0.7;
+                    }
+                
+                     60% {
+                         opacity: 0.8;
                      }
-                     .DomainLeftConcepts {
-                         display: flex;
-                         flex-direction: column;
-                        
-                         span {
-                             font-size: 10px;
-                             font-weight: normal;
-                         }
+                
+                     80% {
+                         opacity: 0.9;
                      }
+                    100% {
+                        opacity: 1;
+                    }
                  }
-             }
-         }
-     }
- }
+        }
+
+        .Right {
+            flex: 1;
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            .Regulate {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                color: white;
+
+                .TitleLeft {
+                    font-size: 50px;
+                    margin-bottom: 60px;
+                }
+
+                .ParagLeft {
+                    line-height: 21px;
+                    font-weight: 100;
+                    white-space: 1px;
+                    margin-bottom: 40px;
+                }
+
+                .DomainLeft {
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    align-items: flex-end;
+
+                    // background-color: red;
+                    h1 {
+                        font-size: 94px;
+                        padding-right: 4px;
+                    }
+
+                    .DomainLeftConcepts {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 26px;
+
+                        span {
+                            font-size: 10px;
+                            color: gray;
+                            font-weight: 600;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width:1290px) {
+    .Article
+    {   
+        clip-path: polygon(0% 2%, 100% 0%, 100% 100%, 0% 98%);
+        height: max-content;
+        .Wrapper{
+            display: flex;
+            flex-direction: column;
+            
+            .Right{
+                width: 100%;
+                // background-color: cadetblue;
+                display: flex;
+                justify-content: center;
+ 
+                .Regulate{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+
+
+                    .DomainLeft{
+                        display: flex;
+                        margin-bottom: 26px;
+
+                        .DomainLeftConcepts{
+                            span{
+                                
+                                animation: move 5s infinite ease;
+                            }
+                            @keyframes move {
+                                from{
+                                    transform: rotateY( 0deg);
+                                }
+                                to{
+                                    transform: rotateY(360deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

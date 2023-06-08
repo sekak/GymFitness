@@ -9,32 +9,43 @@ import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 
 
-function App() {
- 
-  const context = useContext(UserContext)
-  
-    console.log(context)
-    
-   return (
-    <div className="App">
-         <h1>{context}</h1>
-       <Navbar />
-      <Home />
-      <Article/>
 
-        <Features />  
-      <Coach />
-      <Bottom /> 
-      
-    
-    </div>
-  );
+import React from 'react'
+
+function App() {
+  const [showw,setshow] = useState(false)
+  const [a,seta] = useState(false)
+  console.log("app",showw)
+    return (
+    <UserContext.Provider className='App' value={{showw,setshow}}>
+     { showw ? (
+        <>
+        <Navbar/>
+        <Home/>
+        </>
+        ) 
+        : ( 
+          <>
+           <Navbar/>
+        <Home/>
+        <Article/>
+        <Coach/>
+        <Features/>
+          </>
+        )
+        }
+    </UserContext.Provider>  
+  )
 }
 
+export default App
+
+
+ 
 
 
 
 
  
 
-export default App;
+ 

@@ -1,20 +1,21 @@
 import './coach.scss'
-  import { RxTwitterLogo } from "react-icons/rx";
+import { RxTwitterLogo } from "react-icons/rx";
 import { SlSocialFacebook } from "react-icons/sl";
 import { RxInstagramLogo } from "react-icons/rx";
 
 const Coach = () => {
-  return (
-    <div className='coach'>
-        <div className='rect'></div>
-        <h3>COACHES<div className='line'></div></h3>
-        <div className="wrapper">
-            <div className="items">
-                 <div className="item">
-                    <div className="left">
-                        <img className='imgItem' src="https://www.instituteofpersonaltrainers.com/uploads/2/2/0/1/22014694/published/shaun-stafford-personal-trainer.jpg?1612613198" alt="" />
-                    </div>
-                    <div className="right">
+    return (
+        <div className='coach'>
+                <div className="title">COACH
+                <div className="line"></div>
+                </div>
+                
+            <div className="container">
+                <div className="items">
+                    <div className="item">
+                        <div className="left"><img className='img' src="https://blog.salonbodyfitness.com/wp-content/uploads/2019/11/shutterstock_493318507.jpg" alt="" /></div>
+                        <div className="line1"></div>
+                        <div className="right">
                         <h2>STEVEN AYOKEE</h2>
                         <span>COACH</span>
                         <p>Lorem looking text that has been used since the 16th century as a filler text when the final content is not yet available. Lorem ipsum is used to give an idea of the visual layout of a book, document or webpage without being distracted by the real content.</p>
@@ -24,13 +25,14 @@ const Coach = () => {
                              <span className='itemlogo'><RxInstagramLogo/></span>
                         </div>
                     </div>
-                 </div>
-                 <div className="item">
-                    <div className="left">
-                        <img className='imgItem' src="https://media.theeverygirl.com/wp-content/uploads/2019/08/fitness-instructors-favorite-sports-bras-the-everygirl-4.jpg" alt="" />
                     </div>
-                    <div className="right">
-                        <h2>JULIE COLINS</h2>
+                </div>
+                <div className="items">
+                    <div className="item">
+                        <div className="left"><img className='img' src="https://www.cadre-dirigeant-magazine.com/wp-content/uploads/2022/10/visuel-entreprise-sportif-optez.jpeg" alt="" /></div>
+                        <div className="line1"></div>
+                        <div className="right">
+                        <h2>STEVEN AYOKEE</h2>
                         <span>COACH</span>
                         <p>Lorem looking text that has been used since the 16th century as a filler text when the final content is not yet available. Lorem ipsum is used to give an idea of the visual layout of a book, document or webpage without being distracted by the real content.</p>
                         <div className="socialMedia">
@@ -39,13 +41,14 @@ const Coach = () => {
                              <span className='itemlogo'><RxInstagramLogo/></span>
                         </div>
                     </div>
-                 </div>
-                 <div className="item">
-                    <div className="left">
-                        <img className='imgItem' src="https://www.usinesportsclub.com/wp-content/uploads/2022/08/STAN-scaled.jpg" alt="" />
                     </div>
-                    <div className="right">
-                        <h2>VIRGIL COOK</h2>
+                </div>
+                <div className="items">
+                    <div className="item">
+                        <div className="left"><img className='img' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWlEpXaISC6FhWnlRl3VG6a819TBUZ6uhGgRzOalHgS4Nge1c5C-Pka6DX415OfW32OZU&usqp=CAU" alt="" /></div>
+                        <div className="line1"></div>
+                        <div className="right">
+                        <h2>STEVEN AYOKEE</h2>
                         <span>COACH</span>
                         <p>Lorem looking text that has been used since the 16th century as a filler text when the final content is not yet available. Lorem ipsum is used to give an idea of the visual layout of a book, document or webpage without being distracted by the real content.</p>
                         <div className="socialMedia">
@@ -54,13 +57,14 @@ const Coach = () => {
                              <span className='itemlogo'><RxInstagramLogo/></span>
                         </div>
                     </div>
-                 </div>
-                 <div className="item">
-                    <div className="left">
-                        <img className='imgItem' src="https://mustcoach.com/wp-content/uploads/2018/06/mustcoach-coachJonathanMjpg.jpeg" alt="" />
                     </div>
-                    <div className="right">
-                        <h2>DOMINIC SNYDER</h2>
+                </div>
+                <div className="items">
+                    <div className="item">
+                        <div className="left"><img className='img' src="https://c.superprof.com/i/a/18779915/9237324/600/20220602200712/coach-sportif-diplome-donnant-cours-individuels-niveaux-lyon-fitness-park-saint-priest.jpg" alt="" /></div>
+                        <div className="line1"></div>
+                        <div className="right">
+                        <h2>STEVEN AYOKEE</h2>
                         <span>COACH</span>
                         <p>Lorem looking text that has been used since the 16th century as a filler text when the final content is not yet available. Lorem ipsum is used to give an idea of the visual layout of a book, document or webpage without being distracted by the real content.</p>
                         <div className="socialMedia">
@@ -69,12 +73,11 @@ const Coach = () => {
                              <span className='itemlogo'><RxInstagramLogo/></span>
                         </div>
                     </div>
-                 </div>
-
-            </div>
+                    </div>
+                </div>
+            </div> 
         </div>
-    </div>
-  )
+    )
 }
 
 export default Coach

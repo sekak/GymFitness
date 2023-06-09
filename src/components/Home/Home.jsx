@@ -15,7 +15,7 @@ const Home = () => {
         AOS.init({ duration: 2000 });
     }, [])
     const [value, setValue] = useState("+212");
-    const [showContact, setshowContact] = useState(0);
+    const [showContact, setshowContact] = useState(false);
     const {showw,setshow} = useContext(UserContext)
     console.log(showw)
     const handleSelect = (e) => {

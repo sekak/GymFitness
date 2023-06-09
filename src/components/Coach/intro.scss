@@ -1,0 +1,55 @@
+.intro{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    img{    
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .textIntro{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        text-align: start;
+        justify-content: center;
+        top: 0;
+        bottom: 0;
+        left: 10em;
+        width: 490px;
+        height: 100%;
+        background-color: rgba(56, 56, 56, 0.49);
+        padding: 30px;
+        .IntroTitle{
+            color: white;
+            font-size: 55px;
+            letter-spacing:2px;
+            padding-bottom: 40px;
+        }
+        .IntroPara{
+            color: rgb(203, 203, 203);
+            font-weight: 100;
+            word-spacing: 2px;
+            line-height: 23px;
+        }
+    }
+
+}
+
+@media screen  and (max-width:800px){
+        .intro{
+             .textIntro
+            {
+                left: 0;
+                width: 340px;
+                height: 100%;
+                .IntroTitle{
+                     font-size: 45px;
+                    letter-spacing:2px;
+                    padding-bottom: 40px;
+                }
+            }
+        }   
+}

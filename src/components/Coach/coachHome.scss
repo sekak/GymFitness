@@ -1,0 +1,64 @@
+:root {
+    --color-background: trasparent;
+    --stroke-width: calc(1em / 16);
+    --font-size: 10vmin;
+    --font-weight: 700;
+    --letter-spacing: calc(1em / 8);
+  }
+.coachHome {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin-bottom: 30px;
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.387),rgba(0, 0, 0, 0.486)), url("https://progym.ma/wp-content/uploads/2021/04/IMG5912-scaled.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        h1{
+            background-image: linear-gradient(to right, #854eaa, #2f6d99, #5149ab, #9c44a8);
+            background-size: 200% auto;
+            color: #fff;
+             display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            bottom: 0;
+            left:0;
+            right: 0;            
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 2s linear infinite;
+                 font-size: 190px;
+         }
+
+         @keyframes textclip {
+                to{
+                    background-position: 200% center;
+                }
+         }
+    }
+} 
+
+ @media screen and (max-width:850px) {
+        .coachHome{
+            .wrapper{
+                h1{
+                    font-size: 120px;
+                }
+            }
+        }
+ }
+
+ @media screen and (max-width:650px) {
+    .coachHome{
+        .wrapper{
+            h1{
+                font-size: 60px;
+            }
+        }
+    }
+}

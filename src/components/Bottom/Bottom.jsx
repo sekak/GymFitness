@@ -14,9 +14,10 @@ import imgLogo from './imgLogo.png'
 const Bottom = () => {
     return (
         <div className='bottom'>
-            <div className="left">
+             <div className="left">
                 <div className="item1">
                     <h2>Opening Hours</h2>
+                    <hr></hr> 
                     <div>
                         <span className='day'>
                             <TbClockHour4 className='dayLogo' />
@@ -40,6 +41,7 @@ const Bottom = () => {
             <div className="right">
                 <div className="item">
                     <h2>Contact Info</h2>
+                    <hr></hr> 
                     <div className='phone'>
                         <h4><HiPhone/>  <span>+212 657 22 14</span></h4>
                     </div>

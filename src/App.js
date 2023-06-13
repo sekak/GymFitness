@@ -11,12 +11,25 @@ function App() {
   const [showw, setshow] = useState(true)
   
      return (
-      <UserContext.Provider className='App' value={{showw,setshow}}>
+       <UserContext.Provider className='App' value={{showw,setshow}}>
         {/* <HomePage/> */}
         <Coaches/>
       </UserContext.Provider>  
-       
- 
+        // <Swiper
+        // centeredSlides
+        // spaceBetween={50}
+        // slidesPerView="auto"
+        // className='swip'
+         
+        // >
+        //   <SwiperSlide className='SwiperSlide'>1111</SwiperSlide>
+        //   <SwiperSlide className='SwiperSlide'>2222</SwiperSlide>
+        //   <SwiperSlide className='SwiperSlide'>3333</SwiperSlide>
+        //   <SwiperSlide className='SwiperSlide'>4444</SwiperSlide>
+        // </Swiper> 
+      // <>
+
+      // </>
   )
 }
 

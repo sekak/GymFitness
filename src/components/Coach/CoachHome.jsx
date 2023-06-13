@@ -1,10 +1,18 @@
 import "./coachHome.scss"
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
+
+AOS.init();
 
 const CoachHome = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+}, [])
   return (
     <div className='coachHome'>
       <div className="wrapper">
-        <h1>COACHS</h1>
+        <h1 data-aos="fade-up" data-aos-duration={2000}>COACHS</h1>
       </div>
     </div>
   )

@@ -6,7 +6,7 @@ import { useContext, useEffect, useRef, useState } from 'react';
 import imglogo from './loogoo.png'
 import emailjs from '@emailjs/browser';
 import UserContext from '../context/createContext';
-  
+import {GiCancel} from "react-icons/gi"
 
  
 const Home = () => {
@@ -24,6 +24,7 @@ const Home = () => {
 
     const getContact = () => {
         setshowContact(!showContact)
+        setshow(!showw);
     }
     
     const ref = useRef();
@@ -38,6 +39,12 @@ const Home = () => {
             }, (error) => {
                 console.log(error.text);
             });
+    }
+
+    const handleCancel=()=>{
+        setshow(!showw)
+        setshowContact(!showContact)
+
     }
     
      return (
@@ -71,6 +78,7 @@ const Home = () => {
                 </div>
                  {showContact && 
                 <div className="Formcontainer">
+                <GiCancel className='cancel' onClick={handleCancel}/>
                 <img className='Fromlogo' src={imglogo} alt="" />
                 <p>We can get this information to contact you, </p>
                 <span >be faster.</span>

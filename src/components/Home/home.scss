@@ -11,9 +11,11 @@
   z-index: -1;
 
 }
+
 // blur
-.Container
-{ 
+.Container {
+  overflow: hidden;
+
   .videoHome {
     background: black;
     width: 100vw;
@@ -26,14 +28,14 @@
     bottom: 0;
     z-index: -1;
     filter: blur(1em);
-    
+
   }
-  
+
   .Home {
     width: 100vw;
     height: 100vh;
     display: flex;
-  
+
     .Right {
       display: flex;
       align-items: center;
@@ -41,28 +43,28 @@
       padding: 30px;
       width: 100%;
       position: relative;
-  
+
       .Title {
         display: flex;
         flex-direction: column;
         text-align: center;
         filter: blur(0.2em);
-  
+
         h1 {
           color: rgb(254, 254, 254);
           text-shadow: 1px 1px 9px rgba(255, 255, 255, 0.63);
           font-size: 55px;
           font-weight: normal;
         }
-  
-  
+
+
         .Buttons {
           display: flex;
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
           margin: 50px 0px;
-  
+
           .btn-1 {
             padding: 10px 66px;
             margin: 5px;
@@ -72,12 +74,12 @@
             font-weight: 100;
             color: white;
           }
-  
+
           .btn-1:hover {
             background-color: rgba(163, 163, 163, 0.668);
           }
-  
-  
+
+
           .btn-2 {
             font-size: 20px;
             font-weight: 100;
@@ -90,14 +92,14 @@
             -webkit-box-shadow: -1px -1px 54px 4px rgba(255, 255, 255, 0.76);
             -moz-box-shadow: -1px -1px 54px 4px rgba(255, 255, 255, 0.76);
           }
-  
+
           .btn-2:hover {
             background-color: rgba(163, 163, 163, 0.668);
             color: white;
           }
         }
       }
-  
+
       .Formcontainer {
         position: absolute;
         padding: 20px;
@@ -109,31 +111,43 @@
         width: max-content;
         flex-direction: column;
         justify-content: center;
-  
+
+        .cancel {
+          position: absolute;
+          top: -8px;
+          right: -8px;
+          color: rgb(55, 118, 194);
+          font-size: 22px;
+          background-color: rgba(221, 221, 221, 0.072);
+          cursor: pointer;
+        }
+
         .Fromlogo {
           width: 110px;
-  
+
         }
-  
-        p{
+
+        p {
           color: white;
           font-weight: bold;
         }
-        span{
+
+        span {
           color: rgb(0, 191, 255);
           font-weight: 200;
         }
+
         .form {
           display: flex;
           flex-direction: column;
-  
+
           label {
             margin: 10px 0px;
             display: flex;
             flex-direction: column;
             color: rgb(255, 255, 255);
             width: 100%;
-            
+
             input {
               width: 300px;
               height: 40px;
@@ -143,17 +157,17 @@
               font-weight: 100;
               margin-top: 4px;
             }
-  
+
             input:nth-child(2) {
               width: 240px;
               border: none;
             }
-  
+
             .Fromdrop {
               display: flex;
               align-items: center;
               height: 40px;
-              
+
               select {
                 margin-top: 4px;
                 outline: none;
@@ -163,9 +177,9 @@
               }
             }
           }
-  
+
           .Formbutton {
-             margin: 10px 0px;
+            margin: 10px 0px;
             padding: 10px;
             font-size: 20px;
             font-weight: 200;
@@ -174,13 +188,30 @@
             border: none;
             // transition: right / 100% 0% 2s ease;             
           }
-           
+
         }
       }
     }
   }
-  
+
+
 }
+
+@media screen and (max-width:650px) {
+  .Container {
+    .Home {
+      .Right {
+
+        .Formcontainer {
+          display: none;
+
+        }
+      }
+    }
+  }
+}
+
+
 // without blur
 .Home {
   width: 100vw;
@@ -268,14 +299,16 @@
 
       }
 
-      p{
+      p {
         color: white;
         font-weight: bold;
       }
-      span{
+
+      span {
         color: rgb(0, 191, 255);
         font-weight: 200;
       }
+
       .form {
         display: flex;
         flex-direction: column;
@@ -286,7 +319,7 @@
           flex-direction: column;
           color: rgb(255, 255, 255);
           width: 100%;
-          
+
           input {
             width: 300px;
             height: 40px;
@@ -306,7 +339,7 @@
             display: flex;
             align-items: center;
             height: 40px;
-            
+
             select {
               margin-top: 4px;
               outline: none;
@@ -319,7 +352,7 @@
 
         .Formbutton {
           display: inline-block;
-           margin: 10px 0px;
+          margin: 10px 0px;
           padding: 10px;
           font-size: 20px;
           font-weight: 200;
@@ -328,17 +361,19 @@
           background-color: transparent;
           cursor: pointer;
         }
+
         .Formbutton::after {
-          content:'';
+          content: '';
           background-color: red;
           display: block;
           border: 2px solid black;
           transform: scaleX(0);
           transition: transform 2s;
-       }
-       .Formbutton:hover:after{  
-          transform: scaleX(1,2);
-       }
+        }
+
+        .Formbutton:hover:after {
+          transform: scaleX(1, 2);
+        }
       }
     }
   }

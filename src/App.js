@@ -8,12 +8,12 @@ import 'swiper/css';
 
 function App() {
 
-  const [showw, setshow] = useState(true)
+  const [showw, setshow] = useState(false)
   
      return (
        <UserContext.Provider className='App' value={{showw,setshow}}>
-        {/* <HomePage/> */}
-        <Coaches/>
+        <HomePage/>
+        {/* <Coaches/> */}
       </UserContext.Provider>  
         // <Swiper
         // centeredSlides

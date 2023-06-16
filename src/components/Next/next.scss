@@ -1,7 +1,5 @@
 .next{
-    background-color: rgb(15, 15, 15);
-
-    .Contact{
+     .Contact{
         width: 100vw;
         height: 30vh;
         color: white;
@@ -9,20 +7,20 @@
         align-items: center;
         h1{
             z-index: 99;
-            font-size: 40px;
+            font-size: 55px;
             font-weight: 500;
             margin-left: 40px;
-            background-color: black;
-            cursor: pointer;
+             cursor: pointer;
+              
         }
         .logo{
             font-size: 30px;
-            transform: translateX(-80%);
+            transform: translateX(-20%);
             animation: logo 2s infinite;
             cursor: pointer;
         }
         @keyframes logo {
-            100%{transform: translateX(100%);}
+            100%{transform: translateX(120%);}
         }
     }
 }

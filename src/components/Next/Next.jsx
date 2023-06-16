@@ -1,7 +1,8 @@
 import './next.scss'
 import { RxDoubleArrowRight } from 'react-icons/rx';
 
-const Next = (props) => {
+const Next = (props) => {   
+
     return (
         <div className="next">
             <div className='Contact'>

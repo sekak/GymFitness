@@ -5,42 +5,38 @@ import Coaches from './pages/Coach/Coaches';
 import HomePage from './pages/Homepage/HomePage';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
 
   const [showw, setshow] = useState(false)
-  
-     return (
-       <UserContext.Provider className='App' value={{showw,setshow}}>
-        {/* <HomePage/> */}
-        <Coaches/>
-      </UserContext.Provider>  
-        // <Swiper
-        // centeredSlides
-        // spaceBetween={50}
-        // slidesPerView="auto"
-        // className='swip'
-         
-        // >
-        //   <SwiperSlide className='SwiperSlide'>1111</SwiperSlide>
-        //   <SwiperSlide className='SwiperSlide'>2222</SwiperSlide>
-        //   <SwiperSlide className='SwiperSlide'>3333</SwiperSlide>
-        //   <SwiperSlide className='SwiperSlide'>4444</SwiperSlide>
-        // </Swiper> 
-      // <>
 
-      // </>
+  return (
+    <>
+      <Router>
+        <Switch>
+        <UserContext.Provider className='App' value={{ showw, setshow }}>
+          <Route exact path='/'><HomePage/></Route>
+          <Route exact path='/coaches'><Coaches/></Route>
+          </UserContext.Provider>
+        </Switch>
+      </Router>
+    </>
   )
 }
 
 export default App
 
 
- 
 
 
 
 
- 
 
- 
+
+

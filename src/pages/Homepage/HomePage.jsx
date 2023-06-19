@@ -8,36 +8,37 @@ import ArticleCoach from '../../components/ArticleCoach/ArticleCoach'
 import Footer from '../../components/Footer/Footer'
 import Next from '../../components/Next/Next'
 import FeedBack from '../../components/FeedBack/FeedBack'
- 
-function HomePage() {
+import { Link } from "react-router-dom"
 
-  const {showw,setshow} = useContext(UserContext);
+function HomePage() {
+  const { showw, setshow } = useContext(UserContext);
 
   return (
     <>
-     { showw ? (
+      {showw ? (
         <>
-        <Navbar/>
-        <Home/>
+          <Navbar />
+          <Home />
         </>
-        ) 
-        : ( 
+      )
+        : (
           <>
-           <Navbar/>
-        <Home/>
-        <Article/>
-        <ArticleCoach/>
-        <FeedBack/>
-        <Next name="COACHES"/>
-        <Footer/>
-        </>
+            <Navbar />
+            <Home />
+            <Article />
+            <ArticleCoach />
+            <FeedBack />
+            <Link to="/coaches" style={{textDecoration:"none"}}>
+              <Next name="COACHES" />
+            </Link>
+            <Footer />
+          </>
         )
-        }
+      }
     </>
-   )
+  )
 }
 
 export default HomePage
 
 
- 

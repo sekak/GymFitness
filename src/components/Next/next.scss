@@ -1,6 +1,7 @@
 .next{
-     .Contact{
-        width: 100vw;
+    background:linear-gradient(rgb(0, 0, 0),rgba(64, 64, 64, 0.717),rgb(0, 0, 0));
+    width: 100vw;
+      .Contact{
         height: 30vh;
         color: white;
         display: flex;
@@ -11,8 +12,7 @@
             font-weight: 500;
             margin-left: 40px;
              cursor: pointer;
-              
-        }
+         }
         .logo{
             font-size: 30px;
             transform: translateX(-20%);
@@ -24,3 +24,7 @@
         }
     }
 }
+
+
+
+ 

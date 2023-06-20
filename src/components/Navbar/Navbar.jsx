@@ -58,7 +58,7 @@ const Navbar = () => {
                         <ul className='Items' onClick={(e)=>handlescroll(e)}>
                             <li id="1" data-aos="zoom-in" data-aos-duration="1000" className="Item"><Link to="/" style={{textDecoration:"none",color:"white"}}>ACCUEIL</Link></li>
                             <li id="2" data-aos="zoom-in" data-aos-duration="1200" className="Item"><Link to="/coaches" style={{textDecoration:"none",color:"white"}}>COACHES</Link></li>
-                            <li id="3" data-aos="zoom-in" data-aos-duration="1400" className="Item">CONTACT</li>
+                            <li id="3" data-aos="zoom-in" data-aos-duration="1400" className="Item"><Link to="/contact" style={{textDecoration:"none",color:"white"}}>CONTACT</Link></li>
                         </ul>
                     </div>
                     <div className="Left" onClick={() => setOpen(!open)}>{open ? <IoMdClose className='LogoCloseMenu' /> : <FaDumbbell className='LogoDumbell' />}
@@ -68,9 +68,9 @@ const Navbar = () => {
                     open &&
                     <div className='MenuItem'>
                         <ul className='Items'>
-                            <li onClick={()=>setOpen(false)} data-aos="zoom-in" data-aos-duration="1000" className="Item">ACCUEIL</li>
-                            <li onClick={()=>setOpen(false)} data-aos="zoom-in" data-aos-duration="1200" className="Item">COACHS</li>
-                            <li onClick={()=>setOpen(false)} data-aos="zoom-in" data-aos-duration="1400" className="Item">CONTACT</li>
+                            <li  data-aos="zoom-in" data-aos-duration="1000" className="Item"><Link to="/" style={{textDecoration:"none",color:"white"}}>ACCUEIL</Link></li>
+                            <li  data-aos="zoom-in" data-aos-duration="1200" className="Item"><Link to="/coaches" style={{textDecoration:"none",color:"white"}}>COACHES</Link></li>
+                            <li   data-aos="zoom-in" data-aos-duration="1400" className="Item"><Link to="/contact" style={{textDecoration:"none",color:"white"}}>CONTACT</Link></li>
                         </ul>
                     </div>
                 }

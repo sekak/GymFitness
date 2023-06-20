@@ -40,15 +40,23 @@
 
 @media screen  and (max-width:800px){
         .intro{
+
+            .img{
+                // object-position:0%  0%;
+            }
              .textIntro
             {
                 left: 0;
                 width: 340px;
                 height: 100%;
                 .IntroTitle{
-                     font-size: 45px;
+                     font-size: 35px;
                     letter-spacing:2px;
                     padding-bottom: 40px;
+                }
+                .IntroPara{
+                    color: rgb(255, 254, 254);
+                    font-size: 17px;
                 }
             }
         }   

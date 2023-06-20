@@ -47,9 +47,6 @@ const FeedBack = () => {
                     </div>
                    
                 </div>
-                {/* <div className="right">
-                <h1 className='title'>,,</h1>
-                </div> */}
             </div>
         </>
     )

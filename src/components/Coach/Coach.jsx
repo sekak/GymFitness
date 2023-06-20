@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 const Coach = () => {
+  
     return (
         <div className='coach'>
             <div className="title">CHOOSE YOUR COACH

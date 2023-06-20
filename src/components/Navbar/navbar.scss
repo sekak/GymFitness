@@ -113,7 +113,7 @@
     background-color: rgb(34, 34, 34);
     position: absolute;
     top: 0;
-
+    overflow-y: hidden;
     .Items {
       text-align: center;
       color: rgb(255, 255, 255);
@@ -143,6 +143,7 @@
     transition: all 1s ease;
     height: 10vh;
     padding-bottom: 20px;
+    padding-top: 40px;
 
     .Wrapper {
 

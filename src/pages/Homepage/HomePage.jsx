@@ -9,10 +9,16 @@ import Footer from '../../components/Footer/Footer'
 import Next from '../../components/Next/Next'
 import FeedBack from '../../components/FeedBack/FeedBack'
 import { Link } from "react-router-dom"
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 
 function HomePage() {
   const { showw, setshow } = useContext(UserContext);
-
+  const pathname = useLocation();
+  useEffect(()=>{
+      window.scrollTo(0,0);
+  },[pathname])
+    
   return (
     <>
       {showw ? (

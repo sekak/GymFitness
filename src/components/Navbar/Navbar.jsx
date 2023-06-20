@@ -9,6 +9,8 @@ import loogoo from './loogoo.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import {Link} from  "react-router-dom"
+import { BsFillArrowUpCircleFill } from 'react-icons/bs';
+
 AOS.init();
 
 const Navbar = () => {
@@ -33,7 +35,9 @@ const Navbar = () => {
             setShow(true)
         // console.log(window.pageYOffset)
     })
-
+    const handle=()=>{
+        window.scrollTo(0,0);
+    }
     useEffect(()=>{
         AOS.init({duration:2000})
     })
@@ -41,7 +45,7 @@ const Navbar = () => {
     return (
         <>
             <div className={show ? "Navbar" : "Navbar  Navbar-background"}>
-                <div className="top"></div>
+                <div className="top"><BsFillArrowUpCircleFill className='icon' onClick={handle}/></div>
                 <div className="Wrapper">
                     <div className="Right">
                         <div className="RightLogo">

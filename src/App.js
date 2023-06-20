@@ -11,6 +11,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Contact from './pages/Contact/Contact';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <UserContext.Provider className='App' value={{ showw, setshow }}>
           <Route exact path='/'><HomePage/></Route>
           <Route exact path='/coaches'><Coaches/></Route>
+          <Route exact path='/contact'><Contact/></Route>
           </UserContext.Provider>
         </Switch>
       </Router>

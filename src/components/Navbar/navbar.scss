@@ -1,51 +1,74 @@
-.Navbar-background{
-  background: linear-gradient(rgba(0, 0, 0, 0.985),rgb(0, 0, 0));
+.Navbar-background {
+  background: linear-gradient(rgba(0, 0, 0, 0.985), rgb(0, 0, 0));
 }
 
 
-.Navbar{
-   width: 100%;
-   height: 8vh;
+.Navbar {
+  width: 100%;
+  height: 8vh;
   position: fixed;
   height: max-content;
   z-index: 999;
- 
-  .Wrapper{
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 40px;
+    bottom: 80px;
+
+    .icon {
+      color: rgb(162, 162, 162);
+      font-size: 50px;
+      cursor: pointer;
+
+    }
+
+    .icon:hover {
+       color: rgb(255, 255, 255);
+    }
+  }
+
+  .Wrapper {
     width: 100%;
     height: 100%;
     position: relative;
     display: flex;
     align-items: center;
     padding: 15px 0px;
+
     // ********************************** right **********************************
-    .Right{
-      flex:1;
+    .Right {
+      flex: 1;
       display: flex;
       justify-content: start;
       margin-left: 30px;
-      .RightLogo{
+
+      .RightLogo {
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        
-        .Logo{
+
+        .Logo {
           width: 90px;
         }
       }
     }
-    
+
     // ********************************** center **********************************
-    .Center{
+    .Center {
       flex: 1;
       display: flex;
       justify-content: end;
       margin-right: 40px;
-      .Items{
+
+      .Items {
         display: flex;
         align-items: center;
 
-        .Item{
+        .Item {
           cursor: pointer;
           color: rgb(255, 255, 255);
           font-size: 18px;
@@ -55,29 +78,33 @@
         }
       }
     }
+
     // ********************************** left **********************************
-    .Left{
+    .Left {
       flex: 1;
       display: none;
       justify-content: end;
       margin-top: 5px;
       margin-right: 8%;
-      .LogoDumbell{
-         font-size: 30px;
-         color: rgb(44 ,163 ,224);
-         cursor: pointer;
+
+      .LogoDumbell {
+        font-size: 30px;
+        color: rgb(44, 163, 224);
+        cursor: pointer;
       }
-      .LogoCloseMenu{
+
+      .LogoCloseMenu {
         font-size: 42px;
-        color: rgb(44 ,163 ,224);
+        color: rgb(44, 163, 224);
         z-index: 999;
         cursor: pointer;
-       }
-     }
+      }
+    }
 
   }
-      // ********************************** Menu items **********************************
-  .MenuItem{
+
+  // ********************************** Menu items **********************************
+  .MenuItem {
     display: none;
     justify-content: center;
     align-items: center;
@@ -86,70 +113,71 @@
     background-color: rgb(34, 34, 34);
     position: absolute;
     top: 0;
- 
-    .Items{
+
+    .Items {
       text-align: center;
-       color: rgb(255, 255, 255);
+      color: rgb(255, 255, 255);
       list-style: none;
-      .Item{
-        padding:26px;
+
+      .Item {
+        padding: 26px;
         font-size: 40px;
         font-weight: 600;
         border-bottom: 1px solid rgba(5, 110, 191, 0.187);
         cursor: pointer;
 
       }
-      .Item:hover{
-        background: linear-gradient(rgba(34, 86, 150, 0.364) , rgba(21, 84, 144, 0.104));
+
+      .Item:hover {
+        background: linear-gradient(rgba(34, 86, 150, 0.364), rgba(21, 84, 144, 0.104));
         border-bottom: 1px solid rgba(5, 110, 191, 0.606);
       }
     }
   }
 }
 
-@media screen and (max-width:625px)   {
-  
-  .Navbar{
+@media screen and (max-width:625px) {
+
+  .Navbar {
     // background: linear-gradient(rgba(59, 144, 255, 0.985),rgba(59, 144, 255, 0.103));
     transition: all 1s ease;
     height: 10vh;
     padding-bottom: 20px;
-     .Wrapper{
-     
+
+    .Wrapper {
+
       // ********************************** right **********************************
-      .Right{
- 
-        .RightLogo{
- 
-          span:first-child{
- 
-          }
-          .Logo{
- 
-          }
-          span:last-child{
-  
-          }
+      .Right {
+
+        .RightLogo {
+
+          span:first-child {}
+
+          .Logo {}
+
+          span:last-child {}
         }
       }
+
       // ********************************** center **********************************
-      .Center{
+      .Center {
         display: none;
-        .Items{
- 
-  
-          .Item{
- 
-          }
+
+        .Items {
+
+
+          .Item {}
         }
       }
+
       // ********************************** left **********************************
-      .Left{
-          display: flex;
-       }
-      
+      .Left {
+        display: flex;
+      }
+
     }
-    .MenuItem{
+
+    .MenuItem {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -158,21 +186,23 @@
       background-color: rgb(34, 34, 34);
       position: absolute;
       top: 0;
-   
-      .Items{
+
+      .Items {
         text-align: center;
-         color: rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
         list-style: none;
-        .Item{
-          padding:26px;
+
+        .Item {
+          padding: 26px;
           font-size: 40px;
           font-weight: 600;
           border-bottom: 1px solid rgba(5, 110, 191, 0.187);
           cursor: pointer;
-  
+
         }
-        .Item:hover{
-          background: linear-gradient(rgba(34, 86, 150, 0.364) , rgba(21, 84, 144, 0.104));
+
+        .Item:hover {
+          background: linear-gradient(rgba(34, 86, 150, 0.364), rgba(21, 84, 144, 0.104));
           border-bottom: 1px solid rgba(5, 110, 191, 0.606);
         }
       }

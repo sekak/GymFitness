@@ -7,7 +7,7 @@ import Bottom from '../../components/Bottom/Bottom'
 import Footer from '../../components/Footer/Footer'
 import Next from '../../components/Next/Next'
 import { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation ,Link} from 'react-router-dom'
 
 const Coaches = () => {
   const pathname = useLocation();
@@ -20,7 +20,9 @@ const Coaches = () => {
       <CoachHome/>
       <Intro/>
       <Coach/>
+      <Link to="/contact" style={{textDecoration:"none"}}>
        <Next name="CONTACT"/>
+       </Link>
       <Footer/>
      </div>
   )

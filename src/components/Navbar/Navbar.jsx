@@ -56,7 +56,7 @@ const Navbar = () => {
                     </div>
                     <div className="Center">
                         <ul className='Items' onClick={(e)=>handlescroll(e)}>
-                            <li id="1" data-aos="zoom-in" data-aos-duration="1000" className="Item"><Link to="/" style={{textDecoration:"none",color:"white"}}>ACCUEIL</Link></li>
+                            <li id="1" data-aos="zoom-in" data-aos-duration="1000" className="Item"><Link to="/" style={{textDecoration:"none",color:"white"}}>HOME</Link></li>
                             <li id="2" data-aos="zoom-in" data-aos-duration="1200" className="Item"><Link to="/coaches" style={{textDecoration:"none",color:"white"}}>COACHES</Link></li>
                             <li id="3" data-aos="zoom-in" data-aos-duration="1400" className="Item"><Link to="/contact" style={{textDecoration:"none",color:"white"}}>CONTACT</Link></li>
                         </ul>
@@ -68,7 +68,7 @@ const Navbar = () => {
                     open &&
                     <div className='MenuItem'>
                         <ul className='Items'>
-                            <li  data-aos="zoom-in" data-aos-duration="1000" className="Item"><Link to="/" style={{textDecoration:"none",color:"white"}}>ACCUEIL</Link></li>
+                            <li  data-aos="zoom-in" data-aos-duration="1000" className="Item"><Link to="/" style={{textDecoration:"none",color:"white"}}>HOME</Link></li>
                             <li  data-aos="zoom-in" data-aos-duration="1200" className="Item"><Link to="/coaches" style={{textDecoration:"none",color:"white"}}>COACHES</Link></li>
                             <li   data-aos="zoom-in" data-aos-duration="1400" className="Item"><Link to="/contact" style={{textDecoration:"none",color:"white"}}>CONTACT</Link></li>
                         </ul>

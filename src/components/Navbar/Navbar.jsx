@@ -1,8 +1,5 @@
 import './navbar.scss'
-import { GiBigWave } from "react-icons/gi";
-import { CgMenuGridR } from "react-icons/cg";
-import { BsTwitter } from "react-icons/bs";
-import { FaDumbbell } from "react-icons/fa";
+   import { FaDumbbell } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { useEffect, useState } from 'react';
 import loogoo from './loogoo.png'
@@ -14,6 +11,7 @@ import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 AOS.init();
 
 const Navbar = () => {
+
 
     const [open, setOpen] = useState(false)
     const [show, setShow] = useState(true)
@@ -40,7 +38,7 @@ const Navbar = () => {
     }
     useEffect(()=>{
         AOS.init({duration:2000})
-    })
+    },[])
 
     return (
         <>

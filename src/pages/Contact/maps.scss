@@ -136,5 +136,16 @@
     .ContactUS{
         padding: 30px 0px;
         height: max-content;
+
+        .wrapper{
+            .items{
+                .left{
+                    width: 350px;
+                }
+                .right{
+                    width: 350px;
+                }
+            }
+        }
     }
 }

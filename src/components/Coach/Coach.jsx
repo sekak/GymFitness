@@ -23,7 +23,7 @@ const Coach = () => {
                     {list.map((item)=>(
                         <div className="items" key={item.id}>
                         <div className="item" data-aos="fade-up"
-                            data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
+                            data-aos-anchor-placement="fade-up" data-aos-duration="1000">
                             <div className="left"><img className='img' src={item.img} alt={item.img} /></div>
                             <div className="line1"></div>
                             <div className='button'><input type="button" value="VIEW" /></div>

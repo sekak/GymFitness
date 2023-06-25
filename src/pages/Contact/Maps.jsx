@@ -23,7 +23,7 @@ function ContactUs() {
       <div className="wrapper">
         <div className="items">
 
-          <div className="left">
+          <div className="left" data-aos="fade-right" data-aos-duration="1000">
               <h2>Contact-Us</h2>
               <span className='tit-1'>We are here for you</span>
               <span className='tit-2'>For any request or request for information, you can call us, write to us, or even better: come and visit us!</span>
@@ -37,7 +37,7 @@ function ContactUs() {
                 <h4>ADDRESS</h4> <span>Boulverad Mohamed VI,mdiq</span>
               </div>
           </div>
-          <div className="right">
+          <div className="right" data-aos="fade-left" data-aos-duration="1000">
             <h2>Write us</h2>
             <form onSubmit={(e)=>handleclick(e)} ref={ref}>
                 <input type='name' placeholder='Name?' required/>

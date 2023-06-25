@@ -21,7 +21,6 @@ const Footer = () => {
                             <div className="item">HOME</div>
                             <div className="item">COACHS</div>
                             <div className="item">COACHS</div>
-                            <div className="item">INSTALLATION</div>
                         </div>
                     </div>
                     <div className="center">

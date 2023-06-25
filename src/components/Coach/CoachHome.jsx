@@ -7,12 +7,12 @@ AOS.init();
 
 const CoachHome = () => {
   useEffect(() => {
-    AOS.init({ duration: 2000 });
+    AOS.init({ duration: 1500 });
 }, [])
   return (
     <div className='coachHome'>
       <div className="wrapper">
-        <h1 data-aos="zoom-out" data-aos-duration={2000}>COACHS</h1>
+        <h1 data-aos="fade-up"  >COACHS</h1>
       </div>
     </div>
   )

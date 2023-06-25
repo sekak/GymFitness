@@ -7,20 +7,19 @@ import imglogo from './loogoo.png'
 import emailjs from '@emailjs/browser';
 import UserContext from '../context/createContext';
 import { GiCancel } from "react-icons/gi"
+import { IoMdClose } from "react-icons/io";
+import { BsCheckLg } from 'react-icons/bs';
 
 
 const Home = () => {
 
     useEffect(() => {
-        AOS.init({ duration: 2000 });
+        AOS.init({ duration: 1000 });
     }, [])
     const [value, setValue] = useState("+212");
     const [showContact, setshowContact] = useState(true);
     const { showw, setshow } = useContext(UserContext)
-    console.log(showw)
-    const handleSelect = (e) => {
-        setValue(e.target.value)
-    }
+ 
 
     const getContact = () => {
         setshowContact(!showContact)
@@ -44,7 +43,11 @@ const Home = () => {
     const handleCancel = () => {
         setshow(!showw)
         setshowContact(!showContact)
+    }
 
+    const handlestart=()=>{
+        window.scrollTo(850,850);
+        console.log("click")
     }
 
     return (
@@ -55,12 +58,12 @@ const Home = () => {
                     <div className='Title'>
                         <h1 data-aos="fade-up"
                             data-aos-duration="1000"
-                        >ACCUEIL</h1>
+                        >HOME</h1>
                         <div className="Buttons">
                             <button data-aos="fade-right"
                                 data-aos-easing="ease-in-sine"
                                 data-aos-duration="1000"
-                                className="btn-1" >
+                                className="btn-1" onClick={handlestart}>
                                 START HERE
                             </button>
 
@@ -77,7 +80,7 @@ const Home = () => {
                     </div>
                     {showContact &&
                         <div className="Formcontainer">
-                            <GiCancel className='cancel' onClick={handleCancel} />
+                            <IoMdClose className='cancel' onClick={handleCancel} />
                             <div className="top-form">
                                 <img className='imgLogo' src={imglogo} alt="" />
                              </div>

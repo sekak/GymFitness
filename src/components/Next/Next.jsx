@@ -4,10 +4,10 @@ import { RxDoubleArrowRight } from 'react-icons/rx';
 const Next = (props) => {   
 
     return (
-        <div className="next" data-aos="fade-up" data-aos-duration="2000">
+        <div className="next" >
             <div className='Contact'>
-                <h1>{props.name}</h1>
-                <RxDoubleArrowRight className="logo" />
+                <h1 data-aos="fade-right" data-aos-duration="1000"> {props.name}</h1>
+                <RxDoubleArrowRight className="logo" ata-aos="fade-left" data-aos-duration="1000" />
             </div>
         </div>
     )

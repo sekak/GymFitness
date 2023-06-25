@@ -1,5 +1,5 @@
 .Navbar-background {
-  background: linear-gradient(rgba(0, 0, 0, 0.985), rgb(0, 0, 0));
+  background: linear-gradient(rgba(0, 0, 0, 0.797), rgba(0, 0, 0, 0.73));
 }
 
 
@@ -15,8 +15,8 @@
     align-items: center;
     justify-content: center;
     position: fixed;
-    right: 40px;
-    bottom: 80px;
+    right: 30px;
+    bottom: 50px;
 
     .icon {
       color: rgb(162, 162, 162);
@@ -104,36 +104,36 @@
   }
 
   // ********************************** Menu items **********************************
-  .MenuItem {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(34, 34, 34);
-    position: absolute;
-    top: 0;
-    overflow-y: hidden;
-    .Items {
-      text-align: center;
-      color: rgb(255, 255, 255);
-      list-style: none;
+  // .MenuItem {
+  //   display: none;
+  //   // justify-content: center;
+  //   // align-items: center;
+  //   // width: 100vw;
+  //   // height: 100vh;
+  //   // background-color: rgb(34, 34, 34);
+  //   // overflow-y: hidden;
+  //   // position: absolute;
+  //   // top: 0;
+  //   .Items {
+  //     text-align: center;
+  //     color: rgb(255, 255, 255);
+  //     list-style: none;
 
-      .Item {
-        padding: 26px;
-        font-size: 40px;
-        font-weight: 600;
-        border-bottom: 1px solid rgba(5, 110, 191, 0.187);
-        cursor: pointer;
+  //     .Item {
+  //       padding: 26px;
+  //       font-size: 40px;
+  //       font-weight: 600;
+  //       border-bottom: 1px solid rgba(5, 110, 191, 0.187);
+  //       cursor: pointer;
 
-      }
+  //     }
 
-      .Item:hover {
-        background: linear-gradient(rgba(34, 86, 150, 0.364), rgba(21, 84, 144, 0.104));
-        border-bottom: 1px solid rgba(5, 110, 191, 0.606);
-      }
-    }
-  }
+  //     .Item:hover {
+  //       background: linear-gradient(rgba(34, 86, 150, 0.364), rgba(21, 84, 144, 0.104));
+  //       border-bottom: 1px solid rgba(5, 110, 191, 0.606);
+  //     }
+  //   }
+  // }
 }
 
 @media screen and (max-width:625px) {
@@ -180,11 +180,11 @@
 
     .MenuItem {
       display: flex;
-      justify-content: center;
       align-items: center;
+      text-align: start;
       width: 100vw;
       height: 100vh;
-      background-color: rgb(34, 34, 34);
+      background-color: rgb(0, 0, 0);
       position: absolute;
       top: 0;
 
@@ -192,19 +192,18 @@
         text-align: center;
         color: rgb(255, 255, 255);
         list-style: none;
-
         .Item {
-          padding: 26px;
-          font-size: 40px;
+           width: max-content;
+          display: flex;
+          align-items: center;
+           font-size: 40px;
           font-weight: 600;
-          border-bottom: 1px solid rgba(5, 110, 191, 0.187);
-          cursor: pointer;
-
-        }
+          margin: 30px;
+           cursor: pointer;
+         }
 
         .Item:hover {
-          background: linear-gradient(rgba(34, 86, 150, 0.364), rgba(21, 84, 144, 0.104));
-          border-bottom: 1px solid rgba(5, 110, 191, 0.606);
+           border-bottom: 1px solid rgba(255, 255, 255, 0.606);
         }
       }
     }

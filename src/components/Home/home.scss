@@ -17,6 +17,7 @@
   height: 100vh;
   display: flex;
 
+
   .Right {
     display: flex;
     align-items: center;
@@ -80,9 +81,10 @@
     }
 
     .Formcontainer {
-      position: absolute;
+      position: fixed;
+      z-index: 8888;
       padding: 20px;
-      background-color: rgb(0, 0, 0);
+      background-color: rgb(24, 22, 22);
       box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.53);
       -webkit-box-shadow: 2px 0px 15px 6px rgba(0, 0, 0, 0.53);
       -moz-box-shadow: 2px 0px 15px 6px rgba(0, 0, 0, 0.53);
@@ -90,34 +92,104 @@
       width: max-content;
       flex-direction: column;
       justify-content: center;
-      color: white;
-      .top-form {
-        display: none;
+      p{
+        color: white;
       }
+      span{
+        color: #6658d3;
+        margin-bottom: 20px;
+      }
+      .cancel{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        color: #0091ff71;
+        cursor: pointer;
+        font-size: 25px;
+      }
+      .top-form {
+        img{
+          width: 150px;
+        }
+       }
 
       form {
         display: flex;
         flex-direction: column;
-        overflow: hidden;
-        label {
-          padding: 10px 0px;
+        color: white;
+        .input {
           display: flex;
-          flex-direction: column;
-          color: rgb(4, 92, 255);
-          transform: translateY(2rem);
-         }
-           input {
-          outline: none;
-          height: 40px;
-          background-color: transparent;
-          border: none;
-          border-bottom: 1px solid #eee;
-          color: white;
-          &:focus , &:valid, label{
-          
-              
+          flex-direction: column-reverse;
+          position: relative;
+          padding-top: 1.5rem;
+           & + .input {
+            margin-top: 1.5rem;
+          }
+           .input-label {
+            color: #8597a3;
+            position: absolute;
+            top: 1.5rem;
+            transition: 0.25s ease;
+          }
+          .input-field {
+            border: 0;
+            z-index: 1;
+            background-color: transparent;
+            border-bottom: 2px solid #eee;
+            font: inherit;
+            font-size: 1.125rem;
+            color: white;
+            padding: 0.25rem 0;
+            &:focus,
+            &:valid {
+              outline: 0;
+              border-bottom-color: #6658d3;
+              & + .input-label {
+                color: #6658d3;
+                transform: translateY(-1.5rem);
+              }
+            }
+
           }
         }
+        .action {
+          margin-top: 2rem;
+
+          .action-button {
+            font: inherit;
+            font-size: 1.25rem;
+            padding: 1em;
+            width: 100%;
+            font-weight: 500;
+            background-color: #6658d3;
+            border-radius: 6px;
+            color: #fff;
+            border: 0;
+            &:focus {
+              outline: 0;
+            }
+          }
+        }
+
+        // overflow: hidden;
+
+        // label {
+
+        //   padding: 10px 0px;
+        //   position: absolute;
+        //   display: flex;
+        //   flex-direction: column;
+        //   color: rgb(4, 92, 255);
+        //   }
+        //    input {
+        //   outline: none;
+        //   height: 40px;
+        //   background-color: transparent;
+        //   border: none;
+        //   border-bottom: 1px solid #eee;
+        //   color: white;
+
+        // }
       }
     }
   }

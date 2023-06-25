@@ -18,7 +18,7 @@ function Article() {
                 {/*********** Left ********* */}
                 <div className="Left">
                     <div className="wrappLeft">
-                        <img data-aos="fade-right"
+                        <img data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom"
                             data-aos-duration="1500" className='RightImg'
                             src={imgMuscl} alt="" />
@@ -33,14 +33,14 @@ function Article() {
                         <h1 data-aos="fade-left"
                             data-aos-anchor-placement="top-bottom"
                             data-aos-duration="1500" className='TitleLeft'>WELCOME TO OUR GYM</h1>
-                        <span data-aos="fade-left"
+                        <span data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom"
                             data-aos-duration="1500" className='ParagLeft'>The Progym team aims to help you achieve yours in the best conditions. We make your physical, physiological and mental well-being our priority by establishing a personalized follow-up in accordance with your needs. In addition to our various activities through high-end equipment and tailor-made courses for all levels. Don't wait any longer and come join us at the ProGym club!</span>
                         <div className='DomainLeft'>
-                            <h1 data-aos="flip-left"
+                            <h1 data-aos="flip-up"
                                 data-aos-anchor-placement="top-bottom"
                                 data-aos-duration="1500">6</h1>
-                            <div data-aos="flip-left"
+                            <div data-aos="flip-up"
                                 // data-aos
                                 data-aos-anchor-placement="top-bottom"
                                 data-aos-duration="3500" className='DomainLeftConcepts'>

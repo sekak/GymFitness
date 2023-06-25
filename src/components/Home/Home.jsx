@@ -48,8 +48,8 @@ const Home = () => {
     }
 
     return (
-            <>
-             <video className='videoHome' autoPlay muted loop src={vdy} type="video/mp4" />
+        <>
+            <video className='videoHome' autoPlay muted loop src={vdy} type="video/mp4" />
             <div className='Home'>
                 <div className="Right">
                     <div className='Title'>
@@ -85,29 +85,27 @@ const Home = () => {
                             <p>We can get this information to contact you, </p>
                             <span >be faster.</span>
                             <form className='form' id='#form' onSubmit={sendEmail} ref={ref}>
-                                <label>
-                                    Username
-                                </label>
-                                    <input type="text" required   name='user_name' />
-                                <label>
-                                    Telephone
-                                         
-                                 </label>
-                                        <input type="tel"    name='user_tel' />
-                                <label>
-                                    E-mail
-                                </label>
-                                    <input type="gmail" required   name='user_email' />
-                                <label>
-                                    Description
-                                </label>
-                                    <textarea type="hidden" placeholder='Description' required name='user_descr' />
-                                <button type='submit' className='Formbutton' >SEND</button>
+                                 
+                            <div className="input">
+				                <input type="text" className="input-field" required/>
+				                <label className="input-label">Full name</label>
+			                </div>
+						    <div className="input">
+                                <input type="email" className="input-field"  required/>
+				                <label className="input-label">Email</label>
+			                </div>
+						    <div className="input">
+				                <input type="text" className="input-field" required/>
+				                <label className="input-label">Description</label>
+			                </div>
+			                <div className="action">
+				                <button className="action-button">Send</button>
+			                </div>
                             </form>
                         </div>
                     }
-                </div>
-            </div>
+        </div >
+            </div >
         </>
     )
 

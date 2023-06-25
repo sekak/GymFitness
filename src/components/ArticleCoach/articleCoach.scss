@@ -2,10 +2,10 @@
     width: 100vw;
     height: 100vh;
     position: relative;
-    overflow: hidden;
     background:linear-gradient(transparent,rgba(0, 0, 0, 0.9)) , url("https://progym.ma/wp-content/uploads/2021/04/IMG5912-scaled.jpg");
     
     .textIntro{
+        overflow: hidden;
         position: absolute;
         display: flex;
         flex-direction: column;

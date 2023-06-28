@@ -1,0 +1,101 @@
+.containerDe{
+  margin: 0;
+  padding: 0;
+  .wrapperDE{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://r4.wallpaperflare.com/wallpaper/935/706/440/working-out-gyms-smoke-kettlebells-wallpaper-b9c0a87df11aad6b1627780fa081c66d.jpg");
+    .insideDE {
+      width: 70%;
+      height: 100%;
+      height:max-content;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      
+      .item-0 {
+        flex:1;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        .container-0 {
+            height: 100%;
+            width: 80%;
+            background-color: rgba(156, 151, 151, 0.349);
+            .items{
+                padding: 80px;
+
+                img{
+                    width: 140px;
+                    border-radius: 50%;
+                    height: 140px;
+                    object-fit: cover;
+                    // padding: 10px 10px;
+                 }
+                h3{
+                    padding: 10px 0px;
+                     color: rgb(255, 255, 255);
+                     font-size: 18px;
+                     font-weight: 500;
+                }
+                h1{
+                    color: rgb(220, 75, 75);
+                    font-weight: 800;
+                    font-size: 60px;
+                    padding: 0;
+                }
+                h4{
+                  text-transform: uppercase;
+                    font-size: 19px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: rgb(255, 255, 255);
+
+                    span{
+                        color: rgb(255, 255, 255);
+                        font-family: 'Courier New', Courier, monospace;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                    }
+                }
+                p{
+                    padding-top: 30px;
+                     font-size: 19px;
+                    color:rgb(255, 255, 255);
+                }
+            }
+        }
+      }
+      .item-1{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        align-items: flex-end;
+        justify-content: end;
+        color: white;
+        h1{
+          margin: 10px;
+          font-weight: normal;
+        }
+        p{
+          width: 50%;
+          text-align: end;
+        }
+
+        .Logos{
+          display: flex;
+          justify-content: center;
+          cursor: pointer;
+          // background-color: red;
+          .itemlogo{  
+            padding-left: 20px;
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+}

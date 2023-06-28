@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
-    background-color: rgb(1, 1, 1);
+    background-color: rgb(23, 22, 22);
     height: max-content ;
      .title{
         color: white;
@@ -29,14 +29,14 @@
     .container
     {
         display: flex;
+        width: 100%;
         flex-wrap: wrap;
         justify-content: center;
          align-items: center;
-        width: 100%;
         gap: 40px;
         margin-bottom: 50px;
-         
         .items{
+            border-radius: 15px;
             display: flex;
             width: 600px;
             height: max-content;
@@ -64,18 +64,17 @@
                     top: -100%;
                     left: 0;
                     right: 0;    
+                    cursor: pointer;
+                    z-index: 999;
                     input{
-                        padding: 20px;
-                        border-radius: 50%;
-                        border: 1px solid rgb(248, 248, 248);
-                        width: 100px;
-                        height: 100px;
+                        padding: 15px 50px;
+                        border: 0.3px solid rgb(162, 162, 162);
                         font-weight: 400;
                         font-size: 22px;
-                        letter-spacing: 1px;
+                        letter-spacing: 2px;
                         background-color: transparent;
                         color: white;
-                        transition: 1s ease-in-out;
+                        transition: .5s ease-in-out;
                         box-shadow: 0px 0px 75px 88px rgba(255, 255, 255, 0.1);
                         text-shadow: 0px 0px 9px #cececebf;
                         cursor: pointer;
@@ -148,32 +147,29 @@
                 }
             }
         }
-        .items:hover{
+    }
+    .container{
+    
+         .items:hover{
             .item{
-                 .line1
-                {
-                    background-position: 0% 100%;
-                     background-color: rgb(0, 0, 0);
-                }
                 .left{
-                    filter:opacity(30%);
+                     opacity: 0.1;
                 }
                 .right{
-                    filter:opacity(30%);
-                    // .socialMedia{
-                    //     // pointer-events: none;
-                    // }
+                    opacity: 0.1;
+               }
+                
+            }
+            .item:hover , .button{
+                top: 0;
+                bottom: 0;
+                input{
+
+                    background-color: rgba(128, 128, 128, 0.475);
                 }
             }
         }
-        .items:hover .button{
-            transition: .2s ease;
-             bottom: 0;
-             top: 0;
-             z-index: 999;
-
-        }
-     }
+    }
 }
 
 @media screen and (max-width:600px) {

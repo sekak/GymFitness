@@ -12,6 +12,7 @@ import {
   Link
 } from "react-router-dom";
 import Contact from './pages/Contact/Contact';
+import DetailsCoach from './pages/detailsCoach/DetailsCoach';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           <Route exact path='/'><HomePage/></Route>
           <Route exact path='/coaches'><Coaches/></Route>
           <Route exact path='/contact'><Contact/></Route>
+          <Route exact path='/details'><DetailsCoach/></Route>
           </UserContext.Provider>
         </Switch>
       </Router>

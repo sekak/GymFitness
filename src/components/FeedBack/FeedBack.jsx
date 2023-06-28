@@ -6,9 +6,9 @@ import { BsStarFill } from 'react-icons/bs';
 
 const FeedBack = () => {
     const feedback = [
-        { num: 3, text: 'Great gym with a wide range of equipment!', img: "https://www.harleytherapy.co.uk/counselling/wp-content/uploads/16297800391_5c6e812832.jpg", name: "sekak" },
-        { num: 4, text: 'Great gym with a widef range of equipment!', img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCRAouUpqI61-RFexMr9J09Nqn2W3WLNsejQ&usqp=CAU", name: "ahmed" },
-        { num: 5, text: 'Great gym wireferth a wide range of equipment!', img: "https://img.freepik.com/photos-premium/portrait-joueur-rugby-confiant-bras-croises_13339-163014.jpg?w=2000", name: "sekak" },
+        { num: 3, text: 'The gym had a wide range of equipment and the atmosphere was motivating.   ', img: "https://pps.whatsapp.net/v/t61.24694-24/350405871_251211724169650_5856255688304732475_n.jpg?ccb=11-4&oh=01_AdQITWLEZ-WTG9TFmK0dk_1jrnTPtfBfHtHDulj9fOSYYQ&oe=64A6A300", name: "Ahmed-skk" },
+        { num: 4, text: 'Great gym with a wide range of equipment!', img: "https://image.brigitte.de/13518158/t/1o/v1/w1440/r1.5/-/7-anzeichen-dass-du-eine-schwierige-person-bist.jpg", name: "Emily" },
+        { num: 5, text: 'The gym staff was knowledgeable and provided helpful guidance during my workout.', img: "https://pps.whatsapp.net/v/t61.24694-24/355031385_1311000092821910_853677050444787115_n.jpg?ccb=11-4&oh=01_AdQry9Ifc_7XEownQiwo0iDScsNcubi89IRJ9be1rx-0Uw&oe=64A68A88", name: "Anas-EL" },
     ];
 
     // console.log(feedback[0].)

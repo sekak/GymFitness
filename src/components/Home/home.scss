@@ -1,23 +1,53 @@
-.videoHome {
-  background: black;
+.alert-false
+{
+  background-color: red;
   width: 100vw;
   height: 100vh;
-  position: fixed;
-  object-fit: cover;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
+  z-index: 999999;
 }
-
-// without blur
-.Home {
-  width: 100vw;
+  .videoHome {
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  // without blur
+  .Home {
+    width: 100vw;
   height: 100vh;
   display: flex;
-
-
+    position: relative;
+.alert-true
+{
+  position: fixed;
+  top: 100px;
+  right: 0;
+  background-color: rgba(152, 255, 120, 0.809);
+  color: rgba(21, 90, 0, 0.994);
+  width: 500px;
+  height: 20px;
+  display: flex;
+  font-size: 19px;
+  align-items: center;
+  padding: 30px;
+  border-radius: 10px;
+  z-index: 999999;
+  .cancel{
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+}
+  
   .Right {
     display: flex;
     align-items: center;
@@ -25,7 +55,7 @@
     padding: 30px;
     width: 100%;
     position: relative;
-
+    
     .Title {
       display: flex;
       flex-direction: column;

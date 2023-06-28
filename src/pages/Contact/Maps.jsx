@@ -59,9 +59,9 @@ export default function Map() {
   return (
     <>
       <div className="maps">
-        <iframe className='maps-k' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8555969824592!2d-5.322819787508235!3d35.68055747247314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b5da3f7fc3edb%3A0x44c4225428c6dd78!2stest!5e0!3m2!1sfr!2sma!4v1687189198677!5m2!1sfr!2sma" height="800" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1620.4231191034949!2d-5.321545736862666!3d35.68078789288818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b5d0de1565e89%3A0x2754a1ac8f4b487f!2sLa%20Marina%20Fitness!5e0!3m2!1sfr!2sma!4v1687780765291!5m2!1sfr!2sma" width="600" height="750"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  className='maps-k'></iframe>
       </div>
-      <ContactUs />
+      {/* <ContactUs /> */}
     </>
   );
 }

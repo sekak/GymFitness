@@ -25,17 +25,19 @@ const Home = () => {
         setshowContact(!showContact)
         setshow(!showw);
     }
-
+    const [alert,setAlert] = useState(2)
     const ref = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs.sendForm('service_x9wwjsb', 'template_w6oi7ec', ref.current, 'Qc50nD2eKk-FUEWYu')
             .then((result) => {
-                console.log(result.text);
-                // setshowContact(false)
-                setshow(!showw);
+                setAlert(true);
+                console.log(result.text)
+                setshow(false);
+                setshowContact(!showContact)
             }, (error) => {
+                setAlert(false)
                 console.log(error.text);
             });
     }
@@ -52,8 +54,13 @@ const Home = () => {
 
     return (
         <>
+          
             <video className='videoHome' autoPlay muted loop src={vdy} type="video/mp4" />
             <div className='Home'>
+            {alert == 1 &&
+              <div className="alert-true">Success, has been sent <GiCancel className='cancel' onClick={()=>{setAlert(false)}}/></div>
+            } 
+             
                 <div className="Right">
                     <div className='Title'>
                         <h1 data-aos="fade-up"
@@ -90,15 +97,15 @@ const Home = () => {
                             <form className='form' id='#form' onSubmit={sendEmail} ref={ref}>
                                  
                             <div className="input">
-				                <input type="text" className="input-field" required/>
+				                <input name='name' type="text" className="input-field" />
 				                <label className="input-label">Full name</label>
 			                </div>
 						    <div className="input">
-                                <input type="email" className="input-field"  required/>
-				                <label className="input-label">Email</label>
+                                <input name='email' type="text"   list="defaultEmails" className="input-field"  />
+				                <label  className="input-label">Email</label>
 			                </div>
 						    <div className="input">
-				                <input type="text" className="input-field" required/>
+				                <input name='desc' type="text" className="input-field" />
 				                <label className="input-label">Description</label>
 			                </div>
 			                <div className="action">

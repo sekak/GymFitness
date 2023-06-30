@@ -37,7 +37,7 @@
             gap: 30px;
             .left
             {
-                padding:40px 10px; 
+                padding:30px 10px; 
                 display: flex;
                 flex-direction: column;
                 color: white;
@@ -54,8 +54,9 @@
  
                 }
                 .tit-1{
-                    font-size: 14px;
-                    padding-top: 20px;
+                    font-size: 18px;
+                    // padding-top: 0px;
+                    color: rgba(84, 192, 255, 0.685);
                     font-family: Arial, Helvetica, sans-serif;
                 }
                 .tit-2{
@@ -63,7 +64,7 @@
                     font-size: 15px;
                     font-weight: 100;
                     padding-bottom: 30px;
-                    padding-top: 8px;
+                    padding-top: 1px;
                     font-family: Arial, Helvetica, sans-serif;
                 }
                 .item{
@@ -72,15 +73,15 @@
                     justify-content: space-between;
                     padding: 10px;
                     h4{
-                        font-size: 15px;
-                        font-weight: 100;
-                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 16px;
+                        font-weight: 500;
+                        // font-family: Arial, Helvetica, sans-serif;
                     }
                     span{
-                        font-size: 16px;
-                        font-weight: 200;
-                        color: rgb(173, 173, 173);
-                        border-bottom: .3px solid gray;
+                        font-size: 15px;
+                        font-weight: 300;
+                        color: rgb(255, 255, 255);
+                        border-bottom: .3px solid rgba(55, 175, 255, 0.699);
                     }
                 }
             }
@@ -106,7 +107,8 @@
                     input,textarea{
                         background-color: transparent;
                         border: none;
-                        border-bottom: 0.4px solid gray;
+                        border-bottom: 0.4px solid rgba(84, 192, 255, 0.486);
+                        ;
                         padding:15px  0px;
                         outline: none;
                         color: white;
@@ -115,7 +117,7 @@
                     }
                     ::placeholder{
                         color: white;
-                        font-weight: 100;
+                        font-weight: 300;
                     }
                     textarea{
                         padding-bottom: 50px;
@@ -126,7 +128,7 @@
                         background-color: transparent;
                         font-size: 19px;
                         font-weight: 200;
-                        border: 1px solid gray;
+                        border: 1px solid rgba(84, 192, 255, 0.452);
                         border-radius: 10px;
                     }
                 }
@@ -141,16 +143,21 @@
 
 @media screen and (max-width:650px) {   
     .ContactUS{
-        padding: 30px 0px;
+        // padding: 30px 0px;
+        overflow-x: hidden;
         height: max-content;
+        padding-top: 30px;
+        background: linear-gradient(black,rgba(15, 15, 15, 0.945));
 
         .wrapper{
             .items{
                 .left{
+                    padding: 10px;
                     width: 350px;
                 }
                 .right{
                     width: 350px;
+                    background-color: rgba(0, 0, 0, 0.308);
                 }
             }
         }

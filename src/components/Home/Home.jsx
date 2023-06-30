@@ -95,15 +95,15 @@ const Home = () => {
                             <form className='form' id='#form' onSubmit={sendEmail} ref={ref}>
                                  
                             <div className="input">
-				                <input name='name' type="text" className="input-field" />
+				                <input name='name' type="text" className="input-field" required />
 				                <label className="input-label">Full name</label>
 			                </div>
 						    <div className="input">
-                                <input name='email' type="text"   list="defaultEmails" className="input-field"  />
+                                <input name='email' type="text"   list="defaultEmails" required className="input-field"  />
 				                <label  className="input-label">Email</label>
 			                </div>
 						    <div className="input">
-				                <input name='desc' type="text" className="input-field" />
+				                <input name='desc' type="text" className="input-field" required />
 				                <label className="input-label">Description</label>
 			                </div>
 			                <div className="action">

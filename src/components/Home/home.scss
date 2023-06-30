@@ -1,10 +1,4 @@
-.alert-false
-{
-  background-color: red;
-  width: 100vw;
-  height: 100vh;
-  z-index: 999999;
-}
+
   .videoHome {
     background: black;
     width: 100vw;
@@ -29,8 +23,8 @@
   position: fixed;
   top: 100px;
   right: 0;
-  background-color: rgba(125, 253, 87, 0.346);
-  color: rgba(151, 255, 120, 0.761);
+  background-color: rgba(87, 220, 253, 0.346);
+  color: rgba(120, 251, 255, 0.761);
   width: 500px;
   height: 20px;
   display: flex;
@@ -39,11 +33,12 @@
   padding: 30px;
   border-radius: 10px;
   z-index: 999999;
+  font-weight: 500;
   .cancel{
     position: absolute;
-    top: -10px;
-    left: -6px;
-    color: rgba(132, 255, 0, 0.585);
+    top: -2px;
+    left: -2px;
+    color: rgb(0, 218, 247);
     cursor: pointer;
   }
 }
@@ -165,7 +160,6 @@
             margin-top: 1.5rem;
           }
            .input-label {
-            color: #000000;
             position: absolute;
             top: 1.5rem;
             transition: 0.25s ease;
@@ -217,6 +211,9 @@
 
 @media screen and (max-width: 650px) {
   .Home{
+    .alert-true{
+      width: 300px;
+    }
     .Right{
   .Formcontainer {
     position: fixed;

@@ -26,13 +26,11 @@ const Navbar = () => {
     }
  
     window.addEventListener('scroll', () => {
-        // setOpen(false)
-        if (window.pageYOffset >= 131)
+         if (window.pageYOffset >= 131)
             setShow(false)
         else if (window.pageYOffset <= 131)
             setShow(true)
-        // console.log(window.pageYOffset)
-    })
+     })
     const handle=()=>{
         window.scrollTo(0,0);
     }

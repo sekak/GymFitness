@@ -2,6 +2,8 @@ import './detailsCoach.scss'
 import { RxTwitterLogo } from "react-icons/rx";
 import { SlSocialFacebook } from "react-icons/sl";
 import { RxInstagramLogo } from "react-icons/rx";
+import { BsArrowLeft } from "react-icons/bs";
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const DetailsCoach = () => {
     return (
@@ -27,6 +29,7 @@ const DetailsCoach = () => {
                             <span className='itemlogo'><SlSocialFacebook /></span>
                             <span className='itemlogo'><RxInstagramLogo /></span>
                         </div>
+                        <Link to="/coaches"><BsArrowLeft className='logo'/></Link>
                     </div>
                 </div>
             </div>

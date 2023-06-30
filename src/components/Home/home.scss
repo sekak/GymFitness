@@ -29,8 +29,8 @@
   position: fixed;
   top: 100px;
   right: 0;
-  background-color: rgba(152, 255, 120, 0.809);
-  color: rgba(21, 90, 0, 0.994);
+  background-color: rgba(125, 253, 87, 0.346);
+  color: rgba(151, 255, 120, 0.761);
   width: 500px;
   height: 20px;
   display: flex;
@@ -41,9 +41,9 @@
   z-index: 999999;
   .cancel{
     position: absolute;
-    top: -8px;
-    left: -8px;
-    color: rgb(255, 255, 255);
+    top: -10px;
+    left: -6px;
+    color: rgba(132, 255, 0, 0.585);
     cursor: pointer;
   }
 }
@@ -77,7 +77,8 @@
         margin: 50px 0px;
 
         .btn-1 {
-          padding: 10px 66px;
+          width: 240px;
+          height: 48px;
           margin: 5px;
           background-color: transparent;
           border: 1px solid rgb(249, 249, 249);
@@ -93,7 +94,8 @@
         .btn-2 {
           font-size: 20px;
           font-weight: 400;
-          padding: 10px 55px;
+          width: 240px;
+          height: 48px;
           margin: 5px;
           background-color: rgb(219, 219, 219);
           border: 1px solid rgb(219, 219, 219);
@@ -114,10 +116,10 @@
       position: fixed;
       z-index: 8888;
       padding: 20px;
-      background-color: rgb(255, 255, 255);
-      box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.53);
-      -webkit-box-shadow: 2px 0px 15px 6px rgba(0, 0, 0, 0.53);
-      -moz-box-shadow: 2px 0px 15px 6px rgba(0, 0, 0, 0.53);
+      background-color: rgb(26, 26, 26);
+      box-shadow: 0px 0px 18px 1px #38b5fd70;
+      -webkit-box-shadow: 1px 0px 18px 6px #38b5fd70;
+      -moz-box-shadow: 1px 0px 18px 6px #38b5fd70;
       display: flex;
       width: max-content;
       flex-direction: column;
@@ -125,13 +127,13 @@
       padding: 40px;
       border-radius: 10px;
       p{
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         font-size: 20px;
         text-decoration:underline;
         font-weight: 400;
       }
       span{
-        color: #6658d3;
+        color: #38b5fd;
         font-weight: normal;
         font-size: 18px;
         margin-bottom: 20px;
@@ -140,7 +142,7 @@
         position: absolute;
         right: 5px;
         top: 5px;
-        color: #000000;
+        color: #ffffff;
         cursor: pointer;
         font-size: 25px;
       }
@@ -153,7 +155,7 @@
       form {
         display: flex;
         flex-direction: column;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         .input {
           display: flex;
           flex-direction: column-reverse;
@@ -175,18 +177,18 @@
             border-bottom: 2px solid #525252;
             font: inherit;
             font-size: 1.125rem;
-            color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
             padding: 0.25rem 0;
             &:focus,
             &:valid {
               outline: 0;
-              border-bottom-color: #6658d3;
+              border-bottom-color: #38b5fd;
               & + .input-label {
-                color: #6658d3;
+                color: #38b5fd;
                 transform: translateY(-1.5rem);
               }
             }
-
+             
           }
         }
         .action {
@@ -198,7 +200,7 @@
             padding: 1em;
             width: 100%;
             font-weight: 500;
-            background-color: #6658d3;
+            background-color: #38b5fd;
             border-radius: 6px;
             color: #fff;
             border: 0;
@@ -220,10 +222,10 @@
     position: fixed;
     z-index: 8888;
     padding: 20px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.53);
-    -webkit-box-shadow: 2px 0px 15px 6px rgba(0, 0, 0, 0.53);
-    -moz-box-shadow: 2px 0px 15px 6px rgba(0, 0, 0, 0.53);
+    // background-color: rgb(255, 255, 255);
+    // box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.53);
+    // -webkit-box-shadow: 2px 0px 15px 6px rgba(0, 0, 0, 0.53);
+    // -moz/-box-shadow: 2px 0px 15px 6px rgba(0, 0, 0, 0.53);
     display: flex;
     width: max-content;
     flex-direction: column;
@@ -231,13 +233,13 @@
     padding: 40px;
     border-radius: 10px;
     p{
-      color: rgb(0, 0, 0);
+      // color: rgb(0, 0, 0);
       font-size: 12px;
       text-decoration:underline;
-      font-weight: 400;
+      font-weight: 500;
     }
     span{
-      color: #6658d3;
+      // color: #6658d3;
       font-weight: normal;
       font-size: 15px;
       margin-bottom: 20px;
@@ -246,7 +248,6 @@
       position: absolute;
       right: 5px;
       top: 5px;
-      color: #000000;
       cursor: pointer;
       font-size: 25px;
     }
@@ -259,7 +260,6 @@
     form {
       display: flex;
       flex-direction: column;
-      color: rgb(0, 0, 0);
       .input {
         display: flex;
         flex-direction: column-reverse;
@@ -269,7 +269,6 @@
           margin-top: 1.5rem;
         }
          .input-label {
-          color: #000000;
           position: absolute;
           top: 1.5rem;
           transition: 0.25s ease;
@@ -281,15 +280,12 @@
           border-bottom: 2px solid #525252;
           font: inherit;
           font-size: 1.125rem;
-          color: rgb(0, 0, 0);
           padding: 0.25rem 0;
           &:focus,
           &:valid {
             outline: 0;
-            border-bottom-color: #6658d3;
-            & + .input-label {
-              color: #6658d3;
-              transform: translateY(-1.5rem);
+             & + .input-label {
+               transform: translateY(-1.5rem);
             }
           }
 
@@ -304,8 +300,7 @@
           padding: 1em;
           width: 100%;
           font-weight: 500;
-          background-color: #6658d3;
-          border-radius: 6px;
+           border-radius: 6px;
           color: #fff;
           border: 0;
           &:focus {

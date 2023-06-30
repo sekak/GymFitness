@@ -1,5 +1,5 @@
 .next{
-    background:linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.897),rgb(0, 0, 0));
+    background:linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.897),rgba(0, 0, 0, 0.89));
     width: 100vw;
       .Contact{
         height: 30vh;
@@ -27,7 +27,7 @@
 
 @media screen and (max-width:650px) {
     .next{
-    background:linear-gradient(rgb(0, 0, 0),rgba(90, 90, 90, 0.896),rgb(0, 0, 0));
+        background:linear-gradient(rgb(0, 0, 0),rgba(20, 20, 20, 0.356),rgba(0, 0, 0, 0.89));
 
            .Contact{
              h1{

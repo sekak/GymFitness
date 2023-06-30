@@ -8,7 +8,6 @@ import emailjs from '@emailjs/browser';
 import UserContext from '../context/createContext';
 import { GiCancel } from "react-icons/gi"
 import { IoMdClose } from "react-icons/io";
-import { BsCheckLg } from 'react-icons/bs';
 
 
 const Home = () => {
@@ -37,7 +36,6 @@ const Home = () => {
                 setshow(false);
                 setshowContact(!showContact)
             }, (error) => {
-                setAlert(false)
                 console.log(error.text);
             });
     }

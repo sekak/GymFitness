@@ -35,7 +35,7 @@ function Article() {
                             data-aos-duration="1000" className='TitleLeft'>WELCOME TO OUR GYM</h1>
                         <span data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom"
-                            data-aos-duration="1500" className='ParagLeft'>La Marina Fitness team aims to help you achieve yours in the best conditions. We make your physical, physiological and mental well-being our priority by establishing a personalized follow-up in accordance with your needs. In addition to our various activities through high-end equipment and tailor-made courses for all levels. Don't wait any longer and come join us at the ProGym club!</span>
+                            data-aos-duration="1500" className='ParagLeft'>La Marina Fitness team aims to help you achieve yours in the best conditions. We make your physical, physiological and mental well-being our priority by establishing a personalized follow-up in accordance with your needs. In addition to our various activities through high-end equipment and tailor-made courses for all levels. Don't wait any longer and come join us at the La Marina Fitness club!</span>
                         <div className='DomainLeft'>
                             <h1 data-aos="flip-up"
                                 data-aos-anchor-placement="top-bottom"

@@ -12,7 +12,7 @@ const CoachHome = () => {
   return (
     <div className='coachHome'>
       <div className="wrapper">
-        <h1 data-aos="fade-up"  >COACHS</h1>
+        <h1 data-aos="fade-up" >COACHS</h1>
       </div>
     </div>
   )

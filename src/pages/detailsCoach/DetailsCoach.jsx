@@ -3,9 +3,14 @@ import { RxTwitterLogo } from "react-icons/rx";
 import { SlSocialFacebook } from "react-icons/sl";
 import { RxInstagramLogo } from "react-icons/rx";
 import { BsArrowLeft } from "react-icons/bs";
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { Link, useLocation } from 'react-router-dom/cjs/react-router-dom.min';
+import { useEffect } from 'react';
 
 const DetailsCoach = () => {
+    const pathname = useLocation();
+    useEffect(()=>{
+      window.scrollTo(0,0)
+    },[pathname])
     return (
         <div className="containerDe">
             <div className="wrapperDE">
@@ -23,7 +28,7 @@ const DetailsCoach = () => {
                     </div>
                     <div className="item-1">
                         <h1>CONTACT US</h1>
-                        <p>lotrem ipsum life itro lotrem ipsum life itro lotrem ipsum life itro lotrem ipsum life itro lotrem ipsum life itro</p>
+                        {/* <p>lotrem ipsum life itro lotrem ipsum life itro lotrem ipsum life itro lotrem ipsum life itro lotrem ipsum life itro</p> */}
                         <div className='Logos'>
                             <span className='itemlogo'><RxTwitterLogo /></span>
                             <span className='itemlogo'><SlSocialFacebook /></span>

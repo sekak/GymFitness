@@ -17,8 +17,6 @@
         background-position: 50% 50%;
         background-size: cover;
         h1{
-            background-image: linear-gradient(to right, #854eaa, #2f6d99, #5149ab, #9c44a8);
-            background-size: 200% auto;
             color: #fff;
              display: flex;
             position: absolute;
@@ -27,17 +25,9 @@
             top: 0;
             bottom: 0;
             left:0;
-            right: 0;            
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: textclip 2s linear infinite;
-                 font-size: 190px;
-         }
-
-         @keyframes textclip {
-                to{
-                    background-position: 200% center;
-                }
+            right: 0;        
+            font-size: 10rem;  
+            font-weight: 600;  
          }
     }
 } 
@@ -45,8 +35,11 @@
  @media screen and (max-width:850px) {
         .coachHome{
             .wrapper{
+                opacity: 0.8;
                 h1{
                     font-size: 120px;
+                    opacity: 1;
+                    z-index: 9999;
                 }
             }
         }

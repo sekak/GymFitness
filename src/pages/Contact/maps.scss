@@ -1,7 +1,7 @@
 .maps{
     width: 100vw;
     height: 70vh;
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(0, 0, 0);
     overflow: hidden;
     .maps-k{
         display: flex;
@@ -29,6 +29,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 20px ;
         .items{
             display: flex;
             flex-wrap: wrap;
@@ -60,7 +61,7 @@
                     font-family: Arial, Helvetica, sans-serif;
                 }
                 .tit-2{
-                    color: rgb(180, 180, 180);
+                    color: rgb(254, 254, 254);
                     font-size: 15px;
                     font-weight: 100;
                     padding-bottom: 30px;
@@ -70,18 +71,19 @@
                 .item{
                     display: flex;
                     align-items: center;
+                    text-align: center;
                     justify-content: space-between;
                     padding: 10px;
-                    h4{
-                        font-size: 16px;
-                        font-weight: 500;
-                        // font-family: Arial, Helvetica, sans-serif;
-                    }
-                    span{
+                    h4:last-child{
                         font-size: 15px;
                         font-weight: 300;
                         color: rgb(255, 255, 255);
                         border-bottom: .3px solid rgba(55, 175, 255, 0.699);
+                    }
+                    h4:first-child{
+                        font-size: 15px;
+                        font-weight: 500;
+                        // font-family: Arial, Helvetica, sans-serif;
                     }
                 }
             }

@@ -32,20 +32,21 @@ function ContactUs() {
             <span className='tit-1'>We are here for you</span>
             <span className='tit-2'>For any request or request for information, you can call us, write to us, or even better: come and visit us!</span>
             <div className="item">
-              <h4>TELEPHONE</h4> <span>080-5156148</span>
+              <h4>TELEPHONE</h4>
+              <h4>080-5156148</h4>
             </div>
             <div className="item">
-              <h4>E-MAIL</h4> <span>fitness@LaMarinaFitness.ma</span>
+              <h4>E-MAIL</h4> <h4>fitness@LaMarinaFitness.ma</h4>
             </div>
             <div className="item">
-              <h4>ADDRESS</h4> <span>Boulverad Mohamed VI,mdiq</span>
+              <h4>ADDRESS</h4> <h4>Boulverad Mohamed VI,mdiq</h4>
             </div>
           </div>
           <div className="right" data-aos="fade-left" data-aos-duration="1000">
             <h2>Write-us</h2>
             <form onSubmit={(e) => handleclick(e)} ref={ref}>
               <input type='name' placeholder='Name?' required />
-              <input type='email' placeholder='E-mail?' required />
+              <input type='email' placeholder='E-mail or Tel?' />
               <textarea type='text' placeholder="What's new?" required />
               <input type='submit' value="Send" />
             </form>

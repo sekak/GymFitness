@@ -44,8 +44,8 @@ const Footer = () => {
                             <hr></hr>
                         </div>
                         <div className="items">
-                            <div className="item" data-aos="zoom-in" data-aos-duration="1000">Boulvard mohmed vi,<div className="item">Mdiq 222289</div></div>
-                            <div className="item" data-aos="zoom-in" data-aos-duration="1000">0808-565-645</div>
+                            <div className="item" data-aos="zoom-in" data-aos-duration="1000">27 Av. Omar Ibn Abdelazziz,<div className="item"> M'diq</div></div>
+                            <div className="item" data-aos="zoom-in" data-aos-duration="1000">05-3966-4173</div>
                         </div>
                     </div>
                 </div>

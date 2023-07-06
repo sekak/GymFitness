@@ -99,8 +99,8 @@ const Home = () => {
 				                <label className="input-label">Full name</label>
 			                </div>
 						    <div className="input">
-                                <input name='email' type="text"   list="defaultEmails" required className="input-field"  />
-				                <label  className="input-label">Email</label>
+                                <input name='email' type="text" required  list="defaultEmails"  className="input-field"  />
+				                <label  className="input-label">Email or Tel</label>
 			                </div>
 						    <div className="input">
 				                <input name='desc' type="text" className="input-field" required />

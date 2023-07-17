@@ -18,7 +18,7 @@ const DetailsCoach = () => {
                     <div className="item-0">
                         <div className="container-0">
                             <div className="items">
-                                <img src="https://blog.salonbodyfitness.com/wp-content/uploads/2019/11/shutterstock_493318507.jpg" alt="" />
+                                <img src="https://as1.ftcdn.net/v2/jpg/00/73/58/96/1000_F_73589699_I4s2nX0Enc3eQ78T6V1SG5Ac9LF7jsxr.jpg" alt="" />
                                 <h3>WELCOME TO</h3>
                                 <h1>LIFE STYLE</h1>
                                 <h4>with: <span>ahmad sekak</span></h4>

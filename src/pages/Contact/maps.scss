@@ -20,7 +20,7 @@
 
 .ContactUS{
     width: 100vw;
-    height: 50vh;
+    height: max-content;
     background-color: black;
    
     .wrapper{
@@ -29,8 +29,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 20px ;
-        .items{
+         .items{
             display: flex;
             flex-wrap: wrap;
             align-items: center;

@@ -45,9 +45,9 @@ function ContactUs() {
           <div className="right" data-aos="fade-left" data-aos-duration="1000">
             <h2>Write-us</h2>
             <form onSubmit={(e) => handleclick(e)} ref={ref}>
-              <input type='name' placeholder='Name?' required />
-              <input type='email' placeholder='E-mail or Tel?' />
-              <textarea type='text' placeholder="What's new?" required />
+              <input type='name' name="name" placeholder='Name?' required />
+              <input type='email' name="email" placeholder='E-mail or Tel?' />
+              <textarea type='text' name="desc" placeholder="What's new?" required />
               <input type='submit' value="Send" />
             </form>
             {alert == 1 && <div className="alert-true">Success, has been sent</div>}
